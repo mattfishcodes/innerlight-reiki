@@ -1,7 +1,9 @@
 'use client'
 
+import PageWrapper from '../components/PageWrapper/PageWrapper'
+
 const About = () => {
-  return <div className='About'>About component</div>
+  return <PageWrapper>About component</PageWrapper>
 }
 
 export default About

@@ -1,0 +1,12 @@
+@forward 'bootstrap/scss/bootstrap' with (
+  $primary: rgb(6, 55, 112),
+  $secondary: rgb(255, 249, 11),
+  $font-family-base: (
+    'Noto Sans',
+    system-ui,
+  ),
+  $headings-font-family: (
+    'Noto Serif',
+    system-ui,
+  )
+);

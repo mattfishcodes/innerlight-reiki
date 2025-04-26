@@ -1,7 +1,9 @@
 'use client'
 
+import PageWrapper from '../components/PageWrapper/PageWrapper'
+
 const Contact = () => {
-  return <div className='Contact'>Contact component</div>
+  return <PageWrapper>Contact component</PageWrapper>
 }
 
 export default Contact

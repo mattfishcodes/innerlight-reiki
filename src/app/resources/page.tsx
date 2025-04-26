@@ -1,7 +1,9 @@
 'use client'
 
+import PageWrapper from '../components/PageWrapper/PageWrapper'
+
 const Resources = () => {
-  return <div className='Resources'>Resources component</div>
+  return <PageWrapper>Resources component</PageWrapper>
 }
 
 export default Resources
