@@ -3,6 +3,8 @@
 import { useState } from 'react'
 import { Button, Modal, Card } from 'react-bootstrap'
 import Image from 'next/image'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 import PageWrapper from '../components/PageWrapper/PageWrapper'
 
 const Home = () => {
@@ -80,7 +82,8 @@ const Home = () => {
         <p>
           My in-person sessions will be held at{' '}
           <a href='https://www.google.com/maps/place/The+BOX/@44.7599051,-85.618129,16z/data=!4m15!1m8!3m7!1s0x881e32a455cd8c5d:0x90fd911229bfc5e5!2s425+Boardman+Ave,+Traverse+City,+MI+49684!3b1!8m2!3d44.7599051!4d-85.6155541!16s%2Fg%2F11dzqcxs3k!3m5!1s0x881e32a4571c28df:0x72dd1dc36132b1e1!8m2!3d44.7594982!4d-85.6154932!16s%2Fg%2F1pp2vm55r?entry=ttu&g_ep=EgoyMDI0MDgyMS4wIKXMDSoASAFQAw%3D%3D'>
-            The Box, 425 Boardman Ave, Traverse City, MI 49684
+            The Box, 425 Boardman Ave, Traverse City, MI 49684{' '}
+            <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
           </a>
         </p>
         <div className='p-3 border border-primary rounded d-flex flex-column gap-3'>
