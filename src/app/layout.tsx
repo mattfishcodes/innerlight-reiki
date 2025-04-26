@@ -1,14 +1,29 @@
 import type { Metadata } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
+import {
+  Noto_Sans,
+  Noto_Sans_Display,
+  Noto_Serif,
+  Noto_Serif_Display,
+} from 'next/font/google'
 import './globals.scss'
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+const notoSans = Noto_Sans({
+  variable: '--font-noto-sans',
   subsets: ['latin'],
 })
 
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
+const notoSansDisplay = Noto_Sans_Display({
+  variable: '--font-noto-sans-display',
+  subsets: ['latin'],
+})
+
+const notoSerif = Noto_Serif({
+  variable: '--font-noto-serif',
+  subsets: ['latin'],
+})
+
+const notoSerifDisplay = Noto_Serif_Display({
+  variable: '--font-noto-serif-display',
   subsets: ['latin'],
 })
 
@@ -24,7 +39,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body
+        className={`${notoSans.variable} ${notoSansDisplay.variable} ${notoSerif.variable} ${notoSerifDisplay.variable}`}
+      >
         {children}
       </body>
     </html>
