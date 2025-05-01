@@ -5,7 +5,7 @@ import { Button, Modal, Card } from 'react-bootstrap'
 import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
-import PageWrapper from '../components/PageWrapper/PageWrapper'
+import PageWrapper from '@/app/components/PageWrapper/PageWrapper'
 
 const Home = () => {
   const [showModal, setShowModal] = useState(false)

@@ -1,8 +1,8 @@
 'use client'
 
 import { ReactNode } from 'react'
-import Header from '../Header/Header'
-import Footer from '../Footer/Footer'
+import Header from '@/app/components/Header/Header'
+import Footer from '@/app/components/Footer/Footer'
 
 const PageWrapper = ({ children }: { children: ReactNode }) => {
   return (

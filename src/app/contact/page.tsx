@@ -1,6 +1,6 @@
 'use client'
 
-import PageWrapper from '../components/PageWrapper/PageWrapper'
+import PageWrapper from '@/app/components/PageWrapper/PageWrapper'
 
 const Contact = () => {
   return <PageWrapper>Contact component</PageWrapper>
