@@ -2,6 +2,7 @@
 
 import routes from '@/app/routes'
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 
 const Footer = () => {
@@ -11,6 +12,13 @@ const Footer = () => {
     <div className='border-top'>
       <div className='container d-flex justify-content-between align-items-center'>
         <div className='navbar navbar-light nav'>
+          <Image
+            src='/base_icon_transparent_background.png'
+            alt=''
+            className='img-fluid me-4'
+            width={20}
+            height={20}
+          />
           {routes.map((v, i) => (
             <Link
               className={`nav-link p-0 me-4 ${pn === v.href ? 'active' : ''}`}

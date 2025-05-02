@@ -5,10 +5,6 @@ body {
   font-size: 16px;
 }
 
-p {
-  margin: 0;
-}
-
 a {
   text-decoration: none;
 }
@@ -40,11 +36,8 @@ a {
 // welcome page
 
 #enter-link {
-  transition: all 250ms;
-
   &:hover {
     transform: scale(1.05);
-    background-color: $primary;
   }
 }
 

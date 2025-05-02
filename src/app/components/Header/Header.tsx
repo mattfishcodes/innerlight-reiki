@@ -13,7 +13,7 @@ const Header = () => {
         <a className='navbar-brand  w-25' href='/home'>
           <Image
             className='img-fluid'
-            src='/customcolor_logo_transparent_background-e1720475243793.png'
+            src='/customcolor_logo_transparent_background.png'
             alt=''
             width={1000}
             height={500}

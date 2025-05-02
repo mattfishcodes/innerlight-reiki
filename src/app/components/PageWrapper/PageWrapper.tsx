@@ -10,7 +10,7 @@ const PageWrapper = ({ children }: { children: ReactNode }) => {
       <Header />
       <div id='page-wrapper'>
         <div id='page-background' />
-        {children}
+        <div className='container'>{children}</div>
       </div>
       <Footer />
     </>
