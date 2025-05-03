@@ -23,7 +23,7 @@ const Home = () => {
 
   return (
     <PageWrapper>
-      <div className='text-center'>
+      <div className='text-center pb-3'>
         <HeroSection />
         <ServicesCards />
 

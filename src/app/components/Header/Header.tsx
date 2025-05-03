@@ -20,7 +20,7 @@ const Header = () => {
             priority
           />
         </a>
-        <div className='nav'>
+        <nav className='nav'>
           {routes.map((v, i) => (
             <Link
               className={`nav-link p-0 ms-4 ${pn === v.href ? 'active' : ''}`}
@@ -30,7 +30,7 @@ const Header = () => {
               {v.name}
             </Link>
           ))}
-        </div>
+        </nav>
       </div>
     </div>
   )
