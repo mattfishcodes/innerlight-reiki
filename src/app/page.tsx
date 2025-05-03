@@ -2,18 +2,26 @@
 
 import Image from 'next/image'
 import { images } from '@/lib/images'
+import { useState } from 'react'
+import styles from './page.module.scss'
 
 export default function Welcome() {
+  const [loaded, setLoaded] = useState(false)
   return (
     <div
-      className='d-flex justify-content-center align-items-center'
-      style={{
-        backgroundImage: `url('${images.mountainLake.src}')`,
-        height: '100svh',
-        backgroundSize: 'cover',
-      }}
+      className={`position-relative d-flex justify-content-center align-items-center ${styles.pageWrapper} ${loaded ? styles.loaded : ''}`}
     >
-      <div className='d-flex flex-column justify-content-center align-items-center'>
+      <Image
+        src={images.mountainLake.src}
+        alt=''
+        fill
+        sizes='100vh'
+        style={{ objectFit: 'cover', zIndex: -1 }}
+        priority
+        onLoad={() => setLoaded(true)}
+      />
+
+      <div className='d-flex flex-column justify-content-center align-items-center px-3'>
         <Image
           className='img-fluid'
           style={{ filter: 'drop-shadow(5px 5px 5px black)' }}
