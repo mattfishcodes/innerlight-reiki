@@ -8,14 +8,16 @@ const WhatIsReiki = () => {
     <div className='row py-3'>
       <div className='col-lg order-lg-2 pb-3'>
         <h3 className='text-primary text-center text-lg-start'>
-          What is Reiki? (
+          What is Reiki?{' '}
           <span
             lang='ja-jp'
-            style={{ fontFamily: 'var(--font-noto-sans-jp)', fontWeight: 300 }}
+            style={{
+              fontFamily: 'Noto Sans JP',
+              fontWeight: 300,
+            }}
           >
-            レイキ
+            (レイキ)
           </span>
-          )
         </h3>
         <p className='m-0'>
           Reiki is a Japanese healing energy technique used for the treatment of

@@ -1,37 +1,5 @@
 import type { Metadata } from 'next'
-import {
-  Noto_Sans,
-  Noto_Sans_Display,
-  Noto_Serif,
-  Noto_Serif_Display,
-  Noto_Sans_JP,
-} from 'next/font/google'
 import './globals.scss'
-
-const notoSans = Noto_Sans({
-  variable: '--font-noto-sans',
-  subsets: ['latin'],
-})
-
-const notoSansDisplay = Noto_Sans_Display({
-  variable: '--font-noto-sans-display',
-  subsets: ['latin'],
-})
-
-const notoSerif = Noto_Serif({
-  variable: '--font-noto-serif',
-  subsets: ['latin'],
-})
-
-const notoSerifDisplay = Noto_Serif_Display({
-  variable: '--font-noto-serif-display',
-  subsets: ['latin'],
-})
-
-const notoSansJP = Noto_Sans_JP({
-  variable: '--font-noto-sans-jp',
-  subsets: ['latin'],
-})
 
 export const metadata: Metadata = {
   title: 'Inner Light Reiki',
@@ -62,11 +30,7 @@ export default function RootLayout({
         <meta name='apple-mobile-web-app-title' content='Inner Light Reiki' />
         <link rel='manifest' href='/site.webmanifest' />
       </head>
-      <body
-        className={`${notoSans.variable} ${notoSansDisplay.variable} ${notoSerif.variable} ${notoSerifDisplay.variable} ${notoSansJP.variable}`}
-      >
-        {children}
-      </body>
+      <body className={`antialiased`}>{children}</body>
     </html>
   )
 }
