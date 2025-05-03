@@ -8,7 +8,7 @@ const HeroSection = () => {
       <div className='container-lg py-5 d-flex flex-column align-items-center text-center'>
         <Image
           className='img-fluid'
-          src='/base_textlogo_transparent_background-e1720827521221.png'
+          src='/base_textlogo_transparent_background.png'
           alt=''
           width={800}
           height={500}

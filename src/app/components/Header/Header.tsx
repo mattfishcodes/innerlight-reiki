@@ -17,6 +17,7 @@ const Header = () => {
             alt=''
             width={1000}
             height={500}
+            priority
           />
         </a>
         <div className='nav'>

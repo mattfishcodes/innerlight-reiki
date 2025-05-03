@@ -1,13 +1,14 @@
 'use client'
 
 import Image from 'next/image'
+import { images } from '@/lib/images'
 
-export default function Home() {
+export default function Welcome() {
   return (
     <div
       className='d-flex justify-content-center align-items-center'
       style={{
-        backgroundImage: `url('/mountain-lake.jpg')`,
+        backgroundImage: `url('${images.mountainLake.src}')`,
         height: '100svh',
         backgroundSize: 'cover',
       }}
@@ -20,6 +21,7 @@ export default function Home() {
           alt=''
           width={1000}
           height={500}
+          priority
         />
         <a
           id='enter-link'
