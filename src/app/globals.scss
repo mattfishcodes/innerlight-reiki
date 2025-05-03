@@ -67,25 +67,6 @@ a {
 
 // page background
 
-#page-wrapper {
-  padding: 0;
-  position: relative;
-  min-height: 80vh;
-}
-
-#page-background {
-  background-image: url('/mountain-lake-blue.jpg');
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-attachment: fixed;
-  background-position: 50% 35%;
-  opacity: 0.1;
-}
-
 // #home-page-banner,
 // .nature-background {
 //   min-height: 90vh;
