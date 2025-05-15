@@ -7,6 +7,7 @@ import {
   notoSerif,
   notoSerifDisplay,
 } from './fonts'
+import AddBootstrap from './components/AddBootstrap/AddBootstrap'
 
 export const metadata: Metadata = {
   title: 'Inner Light Reiki',
@@ -41,6 +42,7 @@ export default function RootLayout({
         className={`${notoSans.variable} ${notoSansDisplay.variable} ${notoSansJP.variable} ${notoSerif.variable} ${notoSerifDisplay.variable} antialiased`}
       >
         {children}
+        <AddBootstrap />
       </body>
     </html>
   )

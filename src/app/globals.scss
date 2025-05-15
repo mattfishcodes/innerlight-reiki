@@ -20,7 +20,7 @@ a {
 }
 
 .navbar-dark {
-  a {
+  .nav-link {
     color: rgb(255 255 255 / 0.55);
 
     &:hover,
@@ -32,7 +32,7 @@ a {
 }
 
 .navbar-light {
-  a {
+  .nav-link {
     color: rgb(0 0 0 / 0.65);
 
     &:hover,
@@ -50,13 +50,3 @@ a {
     transform: scale(1.05);
   }
 }
-
-// page background
-
-// #home-page-banner,
-// .nature-background {
-//   min-height: 90vh;
-//   background-position: 50% 50%;
-//   background-size: cover;
-//   background-blend-mode: screen;
-// }
