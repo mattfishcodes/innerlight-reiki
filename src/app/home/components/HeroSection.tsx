@@ -15,7 +15,12 @@ const HeroSection = () => {
           priority
         />
       </div>
-      <p style={{ fontFamily: 'var(--font-noto-serif-display)' }}>
+      <p
+        className='fw-bold fs-5'
+        style={{
+          fontFamily: 'var(--font-noto-serif-display)',
+        }}
+      >
         Traverse City, MI
       </p>
       <p className='fs-4 mx-auto pb-3'>
