@@ -1,5 +1,9 @@
 @use './bootstrap' as *;
 
+:root {
+  --primary: #{$primary};
+}
+
 html,
 body {
   font-size: 16px;
