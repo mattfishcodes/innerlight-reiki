@@ -13,6 +13,7 @@ const HeroSection = () => {
           width={800}
           height={500}
           priority
+          unoptimized
         />
       </div>
       <p

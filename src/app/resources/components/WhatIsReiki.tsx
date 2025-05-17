@@ -1,7 +1,6 @@
 'use client'
 
 import Image from 'next/image'
-import { images } from '@/lib/images'
 
 const WhatIsReiki = () => {
   return (
@@ -45,8 +44,8 @@ const WhatIsReiki = () => {
       </div>
       <div className='col-lg-4 order-lg-1'>
         <Image
-          src={images.pagoda.src}
-          alt={images.pagoda.alt}
+          src='pagoda'
+          alt=''
           className='img-fluid rounded'
           width={500}
           height={500}

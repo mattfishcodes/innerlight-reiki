@@ -18,6 +18,7 @@ const Footer = () => {
             className='img-fluid me-4'
             width={20}
             height={20}
+            unoptimized
           />
           {routes.map((v, i) => (
             <Link

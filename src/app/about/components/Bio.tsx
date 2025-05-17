@@ -1,15 +1,14 @@
 'use client'
 
 import Image from 'next/image'
-import { images } from '@/lib/images'
 
 const Bio = () => {
   return (
     <div className='clearfix'>
       <div className='float-start me-3 mb-1 w-md-50 w-lg-25'>
         <Image
-          src={images.reikiSitting.src}
-          alt={images.reikiSitting.alt}
+          src='reiki-sitting'
+          alt=''
           className='img-fluid rounded'
           width={500}
           height={500}

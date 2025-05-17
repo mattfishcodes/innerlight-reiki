@@ -9,7 +9,13 @@ const ServicesCards = () => {
       <Card className='bg-secondary-subtle text-primary border-primary h-100'>
         <Card.Header className='text-start'>$60</Card.Header>
         <div className='w-25 mx-auto pt-3'>
-          <Image src='/reiki-icon.svg' alt='' width={100} height={100} />
+          <Image
+            src='/reiki-icon.svg'
+            alt=''
+            width={100}
+            height={100}
+            unoptimized
+          />
         </div>
         <Card.Body>
           <Card.Title>In Person Reiki</Card.Title>
@@ -24,7 +30,13 @@ const ServicesCards = () => {
       <Card className='bg-secondary-subtle text-primary border-primary h-100'>
         <Card.Header className='text-start'>$50</Card.Header>
         <div className='w-25 mx-auto pt-3'>
-          <Image src='/reiki-icon.svg' alt='' width={100} height={100} />
+          <Image
+            src='/reiki-icon.svg'
+            alt=''
+            width={100}
+            height={100}
+            unoptimized
+          />
         </div>
         <Card.Body>
           <Card.Title>Virtual Reiki</Card.Title>

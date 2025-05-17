@@ -1,7 +1,6 @@
 'use client'
 
 import Image from 'next/image'
-import { images } from '@/lib/images'
 import { useState } from 'react'
 import styles from './page.module.scss'
 
@@ -12,7 +11,7 @@ export default function Welcome() {
       className={`position-relative d-flex justify-content-center align-items-center ${styles.pageWrapper} ${loaded ? styles.loaded : ''}`}
     >
       <Image
-        src={images.mountainLake.src}
+        src='mountain-lake'
         alt=''
         fill
         sizes='100vh'
@@ -30,6 +29,7 @@ export default function Welcome() {
           width={1000}
           height={500}
           priority
+          unoptimized
         />
         <a
           id='enter-link'

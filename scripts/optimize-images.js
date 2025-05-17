@@ -5,8 +5,8 @@ const sharp = require('sharp')
 const fs = require('fs-extra')
 const path = require('path')
 
-const inputDir = path.join(__dirname, '../src/assets/images/src')
-const outputDir = path.join(__dirname, '../src/assets/images')
+const inputDir = path.join(__dirname, '../public/images/src')
+const outputDir = path.join(__dirname, '../public/images')
 
 // You can customize these sizes
 const sizes = [400, 800, 1600]

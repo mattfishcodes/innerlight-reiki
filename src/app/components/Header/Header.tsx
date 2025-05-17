@@ -18,6 +18,7 @@ const Header = () => {
             width={500}
             height={250}
             priority
+            unoptimized
           />
         </Link>
         <button
