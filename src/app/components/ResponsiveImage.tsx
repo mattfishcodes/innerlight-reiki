@@ -53,6 +53,7 @@ export default function ResponsiveImage({
   }
 
   return (
+    // eslint-disable-next-line @next/next/no-img-element
     <img
       ref={imgRef}
       src={fallback.src}

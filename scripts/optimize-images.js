@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-require-imports */
 // scripts/optimize-images.js
 
 const sharp = require('sharp')
