@@ -14,7 +14,7 @@ export default function Welcome() {
         src='mountain-lake'
         alt=''
         fill
-        sizes='100vh'
+        sizes='(max-width: 1200px) 400px, 1200px'
         style={{ objectFit: 'cover', zIndex: -1 }}
         priority
         onLoad={() => setLoaded(true)}
