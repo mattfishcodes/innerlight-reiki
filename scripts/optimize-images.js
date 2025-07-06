@@ -5,11 +5,11 @@ const sharp = require('sharp')
 const fs = require('fs-extra')
 const path = require('path')
 
-const inputDir = path.join(__dirname, '../public/images/src')
+const inputDir = path.join(__dirname, '../src/assets/images')
 const outputDir = path.join(__dirname, '../public/images')
 
 // You can customize these sizes
-const sizes = [400, 800, 1600]
+const sizes = [16, 32, 256, 576, 768, 992, 1200, 1400]
 
 async function optimizeImages() {
   await fs.ensureDir(outputDir)

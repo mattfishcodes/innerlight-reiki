@@ -37,6 +37,11 @@ export default function RootLayout({
         />
         <meta name='apple-mobile-web-app-title' content='Inner Light Reiki' />
         <link rel='manifest' href='/site.webmanifest' />
+        <link
+          rel='preload'
+          href='/images/mountain-lake-blue-1200.webp'
+          as='image'
+        />
       </head>
       <body
         className={`${notoSans.variable} ${notoSansDisplay.variable} ${notoSansJP.variable} ${notoSerif.variable} ${notoSerifDisplay.variable} antialiased`}

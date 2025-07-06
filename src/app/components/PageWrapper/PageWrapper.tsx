@@ -13,7 +13,7 @@ const PageWrapper = ({ children }: { children: ReactNode }) => {
         <div
           className={styles.pageBackground}
           style={{
-            backgroundImage: `url('/images/mountain-lake-blue-800.webp')`,
+            backgroundImage: `url('/images/mountain-lake-blue-1200.webp')`,
           }}
         />
         <div className='container'>{children}</div>

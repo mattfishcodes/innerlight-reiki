@@ -1,18 +1,12 @@
-export default function imageLoader({
-  src,
-  width,
-}: {
-  src: string
-  width: number
-}) {
-  let variant
-  if (width < 800) {
-    variant = 400
-  } else if (width < 1600) {
-    variant = 800
-  } else {
-    variant = 1600
-  }
+import path from 'path'
+import { ImageLoaderProps } from 'next/image'
 
-  return `/images/${src}-${variant}.webp`
+const imageLoader = ({ src, width }: ImageLoaderProps) => {
+  const ext = path.extname(src).toLowerCase()
+
+  const name = path.basename(src, ext)
+
+  return `/images/${name}-${width}.webp`
 }
+
+export default imageLoader

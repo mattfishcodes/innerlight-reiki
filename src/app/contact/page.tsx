@@ -28,9 +28,7 @@ export default function Contact() {
               log: false,
               checkOrigin: false,
               onResized: () => {
-                if (iframeRef.current?.style.height !== '4px') {
-                  setLoaded(true)
-                }
+                setLoaded(true)
               },
             },
             '#moxie-website-contact-form',

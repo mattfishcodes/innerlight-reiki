@@ -4,14 +4,15 @@ import Image from 'next/image'
 
 const Bio = () => {
   return (
-    <div className='clearfix'>
-      <div className='float-start me-3 mb-1 w-md-50 w-lg-25'>
+    <div className='d-lg-flex gap-3 align-items-stretch'>
+      <div className='mb-3 mb-lg-0'>
         <Image
           src='reiki-sitting'
           alt=''
-          className='img-fluid rounded'
-          width={500}
-          height={500}
+          className='img-fluid rounded h-100'
+          width={1200}
+          height={1487}
+          sizes='(max-width: 768px) 50vw, 25vw'
         />
       </div>
 

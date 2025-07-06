@@ -8,6 +8,8 @@ const nextConfig: NextConfig = {
   trailingSlash: true,
   images: {
     loaderFile: './imageLoader.ts',
+    deviceSizes: [576, 768, 992, 1200, 1400],
+    imageSizes: [16, 32, 256],
   },
   allowedDevOrigins: ['192.168.1.*'],
   sassOptions: {

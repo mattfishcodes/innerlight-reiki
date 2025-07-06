@@ -4,8 +4,8 @@ import Image from 'next/image'
 
 const WhatIsReiki = () => {
   return (
-    <div className='row py-3'>
-      <div className='col-lg order-lg-2 pb-3'>
+    <div className='d-lg-flex gap-3 align-items-stretch mb-lg-3'>
+      <div className='order-lg-2'>
         <h3 className='text-primary text-center text-lg-start'>
           What is Reiki? (
           <span
@@ -42,13 +42,14 @@ const WhatIsReiki = () => {
           are in the process of dying.
         </p>
       </div>
-      <div className='col-lg-4 order-lg-1'>
+      <div>
         <Image
           src='pagoda'
           alt=''
-          className='img-fluid rounded'
-          width={500}
-          height={500}
+          className='img-fluid rounded h-100'
+          width={768}
+          height={1117}
+          sizes='(max-width: 768px) 50vw, 25vw'
         />
       </div>
     </div>

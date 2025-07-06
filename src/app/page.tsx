@@ -11,7 +11,7 @@ export default function Welcome() {
       className={`position-relative d-flex justify-content-center align-items-center ${styles.pageWrapper} ${loaded ? styles.loaded : ''}`}
     >
       <Image
-        src='mountain-lake'
+        src='/mountain-lake.png'
         alt=''
         fill
         sizes='(max-width: 1200px) 400px, 1200px'
