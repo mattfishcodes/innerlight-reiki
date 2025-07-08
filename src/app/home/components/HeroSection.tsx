@@ -7,11 +7,11 @@ const HeroSection = () => {
     <>
       <div className='container-lg py-5 d-flex flex-column align-items-center text-center'>
         <Image
-          className='img-fluid'
+          className='img-fluid w-lg-50'
           src='/base_textlogo_transparent_background.png'
           alt=''
-          width={800}
-          height={500}
+          width={1489}
+          height={290}
           priority
           unoptimized
         />

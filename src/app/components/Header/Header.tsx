@@ -10,13 +10,13 @@ const Header = () => {
   return (
     <nav className='navbar navbar-expand-md navbar-dark bg-primary'>
       <div className='container'>
-        <Link className='navbar-brand w-25' href='/home'>
+        <Link className={`navbar-brand w-50 w-lg-25`} href='/home'>
           <Image
             className='img-fluid'
             src='/customcolor_logo_transparent_background.png'
             alt=''
-            width={500}
-            height={250}
+            width={2969}
+            height={658}
             priority
             unoptimized
           />
@@ -25,8 +25,8 @@ const Header = () => {
           className='navbar-toggler'
           type='button'
           data-bs-toggle='collapse'
-          data-bs-target='#navbarTogglerDemo01'
-          aria-controls='navbarTogglerDemo01'
+          data-bs-target='#navbarToggler'
+          aria-controls='navbarToggler'
           aria-expanded='false'
           aria-label='Toggle navigation'
         >
@@ -34,13 +34,13 @@ const Header = () => {
         </button>
         <div
           className='collapse navbar-collapse justify-content-end'
-          id='navbarTogglerDemo01'
+          id='navbarToggler'
         >
           <ul className='navbar-nav'>
             {routes.map((v, i) => (
               <li key={i} className='nav-item'>
                 <Link
-                  className={`nav-link p-0 ms-2 ms-md-4 ${pn.startsWith(v.href) ? 'active' : ''}`}
+                  className={`nav-link p-0 m-2 ${pn.startsWith(v.href) ? 'active' : ''}`}
                   href={v.href}
                 >
                   {v.name}
