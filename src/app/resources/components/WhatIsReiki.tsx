@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const WhatIsReiki = () => {
   return (
-    <div className='d-lg-flex gap-3 align-items-stretch mb-lg-3'>
+    <div className='d-lg-flex gap-3 align-items-stretch mb-3'>
       <div className='order-lg-2'>
         <h3 className='text-primary text-center text-lg-start'>
           What is Reiki? (
@@ -31,7 +31,7 @@ const WhatIsReiki = () => {
           treatment.
         </p>
         <hr className='border border-primary rounded' />
-        <p className='m-0'>
+        <p className='mb-3 m-lg-0'>
           During a Reiki session, energy is shared by a trained practitioner
           through touch and intention to promote the health of the body, mind
           and spirit. Common reactions after a Reiki session include feelings of
