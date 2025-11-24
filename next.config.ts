@@ -12,15 +12,6 @@ const nextConfig: NextConfig = {
     imageSizes: [16, 32, 256],
   },
   allowedDevOrigins: ['192.168.1.*'],
-  sassOptions: {
-    silenceDeprecations: [
-      'import',
-      'mixed-decls',
-      'color-functions',
-      'global-builtin',
-      'legacy-js-api',
-    ],
-  },
 }
 
 export default nextConfig
