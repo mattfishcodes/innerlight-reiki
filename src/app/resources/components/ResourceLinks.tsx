@@ -1,7 +1,6 @@
 'use client'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
+import { SquareArrowOutUpRight } from 'lucide-react'
 
 const ResourceLinks = () => {
   return (
@@ -13,22 +12,20 @@ const ResourceLinks = () => {
           className='list-group-item list-group-item-action list-group-item-primary'
         >
           Reiki is Better Than Placebo and Has Broad Potential as a
-          Complementary Health Therapy{' '}
-          <FontAwesomeIcon icon={faUpRightFromSquare} />
+          Complementary Health Therapy <SquareArrowOutUpRight size={18} />
         </a>
         <a
           href='https://www.liebertpub.com/doi/10.1089/acm.2019.0022/'
           className='list-group-item list-group-item-action list-group-item-primary'
         >
           A Large Scale Effectiveness Trial of Reiki for Physical and
-          Psychological Health <FontAwesomeIcon icon={faUpRightFromSquare} />
+          Psychological Health <SquareArrowOutUpRight size={18} />
         </a>
         <a
           href='https://centerforreikiresearch.com/'
           className='list-group-item list-group-item-action list-group-item-primary'
         >
-          The Center for Reiki Research{' '}
-          <FontAwesomeIcon icon={faUpRightFromSquare} />
+          The Center for Reiki Research <SquareArrowOutUpRight size={18} />
         </a>
       </ul>
     </div>
