@@ -10,7 +10,8 @@
     "prettier": "prettier . --write",
     "typecheck": "tsc",
     "cleanup": "npm run lint && npm run typecheck && npm run prettier",
-    "optimize-images": "node scripts/optimize-images.js"
+    "optimize-images": "node scripts/optimize-images.js",
+    "prepare": "husky"
   },
   "dependencies": {
     "bootstrap": "^5.3.8",
@@ -30,6 +31,8 @@
     "@types/react-dom": "^19.2.3",
     "eslint": "^9",
     "eslint-config-next": "^16.0.7",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
     "prettier": "^3.6.2",
     "sass": "^1.94.2",
     "typescript": "^5"
