@@ -15,13 +15,11 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.8",
-    "fs-extra": "^11.3.2",
     "lucide-react": "^0.562.0",
     "next": "^16.1.0",
     "react": "^19.2.3",
     "react-bootstrap": "^2.10.10",
-    "react-dom": "^19.2.3",
-    "sharp": "^0.34.5"
+    "react-dom": "^19.2.3"
   },
   "devDependencies": {
     "@mattfishcodes/image-tools": "file:///Users/mattfisher/dev/modules/image-tools",
