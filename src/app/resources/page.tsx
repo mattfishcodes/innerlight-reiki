@@ -1,6 +1,6 @@
 'use client'
 
-import PageWrapper from '@/app/components/PageWrapper/PageWrapper'
+import PageWrapper from '@/components/PageWrapper'
 import WhatIsReiki from './components/WhatIsReiki'
 import ReikiSession from './components/ReikiSession'
 import ResourceLinks from './components/ResourceLinks'

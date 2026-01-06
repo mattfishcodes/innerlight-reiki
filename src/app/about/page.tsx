@@ -1,6 +1,6 @@
 'use client'
 
-import PageWrapper from '@/app/components/PageWrapper/PageWrapper'
+import PageWrapper from '@/components/PageWrapper'
 import Bio from './components/Bio'
 import Qualifications from './components/Qualifications'
 
@@ -9,7 +9,7 @@ const About = () => {
     <PageWrapper>
       <div className='py-3'>
         <Bio />
-        <hr className='border border-primary rounded' />
+        <hr className='border-primary rounded border' />
         <Qualifications />
       </div>
     </PageWrapper>

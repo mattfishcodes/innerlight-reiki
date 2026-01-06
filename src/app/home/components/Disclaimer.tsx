@@ -3,7 +3,7 @@
 const Disclaimer = () => {
   return (
     <>
-      <div className='p-3 border border-primary rounded d-flex flex-column gap-3'>
+      <div className='border-primary gap-3 rounded-md border p-4'>
         <p>
           My services are intended to support overall well-being and personal
           development.

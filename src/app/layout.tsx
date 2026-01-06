@@ -1,5 +1,5 @@
+import './globals.css'
 import type { Metadata } from 'next'
-import './globals.scss'
 import {
   notoSans,
   notoSansDisplay,
@@ -7,7 +7,8 @@ import {
   notoSerif,
   notoSerifDisplay,
 } from './fonts'
-import AddBootstrap from './components/AddBootstrap/AddBootstrap'
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
 
 export const metadata: Metadata = {
   title: 'Inner Light Reiki',
@@ -46,8 +47,9 @@ export default function RootLayout({
       <body
         className={`${notoSans.variable} ${notoSansDisplay.variable} ${notoSansJP.variable} ${notoSerif.variable} ${notoSerifDisplay.variable} antialiased`}
       >
+        <Header />
         {children}
-        <AddBootstrap />
+        <Footer />
       </body>
     </html>
   )

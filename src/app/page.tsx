@@ -2,39 +2,40 @@
 
 import Image from 'next/image'
 import { useState } from 'react'
-import styles from './page.module.scss'
+import { cn } from '@/lib/utils'
 
 export default function Welcome() {
   const [loaded, setLoaded] = useState(false)
   return (
     <div
-      className={`position-relative d-flex justify-content-center align-items-center ${styles.pageWrapper} ${loaded ? styles.loaded : ''}`}
+      className={cn(
+        'relative flex h-svh items-center justify-center opacity-0 transition-opacity',
+        loaded && 'opacity-100',
+      )}
     >
       <Image
         src='/mountain-lake.png'
         alt=''
         fill
         sizes='(max-width: 1200px) 400px, 1200px'
-        style={{ objectFit: 'cover', zIndex: -1 }}
+        className='-z-10 object-cover'
         priority
         onLoad={() => setLoaded(true)}
       />
 
-      <div className='d-flex flex-column justify-content-center align-items-center px-3'>
+      <div className='flex flex-col items-center justify-center px-3'>
         <Image
-          className='img-fluid'
-          style={{ filter: 'drop-shadow(5px 5px 5px black)' }}
           src='/customcolor_logo_transparent_background.png'
           alt=''
           width={1000}
           height={500}
+          className='drop-shadow-2xl/50 drop-shadow-black'
           priority
           unoptimized
         />
         <a
           id='enter-link'
-          className='text-secondary border border-2 border-secondary rounded px-3 py-2'
-          style={{ filter: 'drop-shadow(5px 5px 5px black)' }}
+          className='text-secondary border-secondary rounded-xl border-2 px-3 py-2 drop-shadow-2xl drop-shadow-black/50 transition-transform hover:scale-110'
           href='/home'
         >
           Enter

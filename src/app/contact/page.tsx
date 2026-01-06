@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from 'react'
 import Script from 'next/script'
 import styles from './page.module.scss'
-import PageWrapper from '../components/PageWrapper/PageWrapper'
+import PageWrapper from '../../components/PageWrapper'
 import { LoaderCircle } from 'lucide-react'
 
 export default function Contact() {
@@ -64,7 +64,7 @@ export default function Contact() {
         src='https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.10/iframeResizer.min.js'
       ></Script>
       <div style={{ width: '100%', minHeight: '600px' }} className='py-4'>
-        <h2 className='text-center text-primary'>
+        <h2 className='text-primary text-center'>
           Fill out this form and I&apos;ll be in touch as soon as possible!
         </h2>
         <iframe

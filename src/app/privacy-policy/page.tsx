@@ -1,6 +1,6 @@
 'use client'
 
-import PageWrapper from '../components/PageWrapper/PageWrapper'
+import PageWrapper from '../../components/PageWrapper'
 
 const PrivacyPolicy = () => {
   return (

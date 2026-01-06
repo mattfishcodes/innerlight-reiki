@@ -1,0 +1,44 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary: rgb(6, 55, 112);
+  --color-primary-dark: hsl(212, 90%, 18%);
+  --color-secondary: rgb(255, 249, 11);
+
+  --font-noto-sans: var(--font-noto-sans);
+  --font-noto-serif: var(--font-noto-serif);
+  --font-noto-serif-display: var(--font-noto-serif-display);
+}
+
+@layer base {
+  body {
+    @apply font-noto-sans;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-noto-serif;
+  }
+
+  h1 {
+    @apply text-2xl;
+  }
+
+  h2 {
+    @apply text-2xl;
+  }
+
+  h3 {
+    @apply text-xl;
+  }
+
+  h4 {
+    @apply text-lg;
+  }
+}

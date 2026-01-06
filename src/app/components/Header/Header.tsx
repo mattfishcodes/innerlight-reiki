@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <nav className='navbar navbar-expand-md navbar-dark bg-primary'>
       <div className='container'>
-        <Link className={`navbar-brand w-50 w-lg-25`} href='/home'>
+        <Link className={`navbar-brand w-lg-25 w-50`} href='/home'>
           <Image
             className='img-fluid'
             src='/customcolor_logo_transparent_background.png'
@@ -33,14 +33,14 @@ const Header = () => {
           <span className='navbar-toggler-icon'></span>
         </button>
         <div
-          className='collapse navbar-collapse justify-content-end'
+          className='navbar-collapse justify-content-end collapse'
           id='navbarToggler'
         >
           <ul className='navbar-nav'>
             {routes.map((v, i) => (
               <li key={i} className='nav-item'>
                 <Link
-                  className={`nav-link p-0 m-2 ${pn.startsWith(v.href) ? 'active' : ''}`}
+                  className={`nav-link m-2 p-0 ${pn.startsWith(v.href) ? 'active' : ''}`}
                   href={v.href}
                 >
                   {v.name}

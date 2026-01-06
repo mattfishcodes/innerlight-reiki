@@ -1,8 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Button } from 'react-bootstrap'
-import PageWrapper from '@/app/components/PageWrapper/PageWrapper'
+import PageWrapper from '@/components/PageWrapper'
 import HeroSection from './components/HeroSection'
 import ServicesCards from './components/ServicesCards'
 import Disclaimer from './components/Disclaimer'
@@ -21,14 +20,17 @@ const Home = () => {
 
   return (
     <PageWrapper>
-      <div className='text-center pb-3'>
+      <div className='pb-3 text-center'>
         <HeroSection />
         <ServicesCards />
 
         <div className='m-5'>
-          <Button variant='primary' className='fs-3 p-3' onClick={handleShow}>
+          <button
+            className='bg-primary hover:bg-primary-dark cursor-pointer rounded-md p-4 text-2xl text-white transition-all hover:scale-105'
+            onClick={handleShow}
+          >
             Book an Appointment Now
-          </Button>
+          </button>
         </div>
 
         <Disclaimer />

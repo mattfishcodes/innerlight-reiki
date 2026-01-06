@@ -1,9 +1,0 @@
-.pageWrapper {
-  height: 100svh;
-  opacity: 0;
-  transition: opacity 500ms ease-in-out;
-
-  &.loaded {
-    opacity: 1;
-  }
-}

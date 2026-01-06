@@ -5,9 +5,9 @@ import Image from 'next/image'
 const HeroSection = () => {
   return (
     <>
-      <div className='container-lg py-5 d-flex flex-column align-items-center text-center'>
+      <div className='flex flex-col items-center py-4'>
         <Image
-          className='img-fluid w-lg-50'
+          className='lg:w-[80%]'
           src='/base_textlogo_transparent_background.png'
           alt=''
           width={1489}
@@ -16,15 +16,10 @@ const HeroSection = () => {
           unoptimized
         />
       </div>
-      <p
-        className='fw-bold fs-5'
-        style={{
-          fontFamily: 'var(--font-noto-serif-display)',
-        }}
-      >
+      <p className='font-noto-serif-display text-2xl font-semibold'>
         Traverse City, MI
       </p>
-      <p className='fs-4 mx-auto pb-3'>
+      <p className='mx-auto my-3 text-xl'>
         I believe in the profound ability of Reiki to promote healing, balance,
         and inner peace. <br />
         My mission is to guide you on your journey towards well-being through
