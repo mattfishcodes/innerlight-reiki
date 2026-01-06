@@ -23,6 +23,7 @@
     "sharp": "^0.34.5"
   },
   "devDependencies": {
+    "@mattfishcodes/image-tools": "file:///Users/mattfisher/dev/modules/image-tools",
     "@popperjs/core": "^2.11.8",
     "@types/node": "^24",
     "@types/react": "^19.2.7",
