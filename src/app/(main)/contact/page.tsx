@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from 'react'
 import Script from 'next/script'
 import styles from './page.module.scss'
-import PageWrapper from '../../components/PageWrapper'
+import PageWrapper from '../../../components/PageWrapper'
 import { LoaderCircle } from 'lucide-react'
 
 export default function Contact() {

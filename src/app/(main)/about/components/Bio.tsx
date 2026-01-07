@@ -4,12 +4,12 @@ import Image from 'next/image'
 
 const Bio = () => {
   return (
-    <div className='d-lg-flex gap-3 align-items-stretch'>
-      <div className='mb-3 mb-lg-0'>
+    <div className='d-lg-flex align-items-stretch gap-3'>
+      <div className='mb-lg-0 mb-3'>
         <Image
           src='reiki-sitting'
           alt=''
-          className='img-fluid rounded h-100'
+          className='img-fluid h-100 rounded'
           width={1200}
           height={1487}
           sizes='(max-width: 768px) 50vw, 25vw'

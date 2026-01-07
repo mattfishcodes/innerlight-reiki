@@ -10,12 +10,12 @@ const Footer = () => {
 
   return (
     <div className='border-top'>
-      <div className='container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between navbar navbar-light'>
-        <div className='d-flex align-items-center flex-column flex-lg-row gap-1 gap-lg-3 mb-1 mb-lg-0'>
+      <div className='d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between navbar navbar-light container'>
+        <div className='d-flex align-items-center flex-column flex-lg-row gap-lg-3 mb-lg-0 mb-1 gap-1'>
           <Image
             src='/base_icon_transparent_background.png'
             alt=''
-            className='img-fluid me-4 d-none d-lg-block'
+            className='img-fluid d-none d-lg-block me-4'
             width={20}
             height={20}
             unoptimized
@@ -31,7 +31,7 @@ const Footer = () => {
           ))}
         </div>
 
-        <div className='d-flex align-items-center flex-column flex-lg-row gap-1 gap-lg-3'>
+        <div className='d-flex align-items-center flex-column flex-lg-row gap-lg-3 gap-1'>
           <Link
             className={`nav-link ${pn === '/privacy-policy' ? 'active' : ''}`}
             href='/privacy-policy'

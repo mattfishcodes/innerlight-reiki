@@ -4,9 +4,9 @@ import Image from 'next/image'
 
 const WhatIsReiki = () => {
   return (
-    <div className='d-lg-flex gap-3 align-items-stretch mb-3'>
+    <div className='d-lg-flex align-items-stretch mb-3 gap-3'>
       <div className='order-lg-2'>
-        <h3 className='text-primary text-center text-lg-start'>
+        <h3 className='text-primary text-lg-start text-center'>
           What is Reiki? (
           <span
             lang='ja-jp'
@@ -25,13 +25,13 @@ const WhatIsReiki = () => {
           through all living things. When energy is blocked, it can lead to
           emotional, physical and spiritual imbalances.
         </p>
-        <hr className='border border-primary rounded' />
-        <p className='lead m-0 fw-medium'>
+        <hr className='border-primary rounded border' />
+        <p className='lead fw-medium m-0'>
           Reiki is NOT a substitute or replacement for conventional medical
           treatment.
         </p>
-        <hr className='border border-primary rounded' />
-        <p className='mb-3 m-lg-0'>
+        <hr className='border-primary rounded border' />
+        <p className='m-lg-0 mb-3'>
           During a Reiki session, energy is shared by a trained practitioner
           through touch and intention to promote the health of the body, mind
           and spirit. Common reactions after a Reiki session include feelings of
@@ -46,7 +46,7 @@ const WhatIsReiki = () => {
         <Image
           src='pagoda'
           alt=''
-          className='img-fluid rounded h-100'
+          className='img-fluid h-100 rounded'
           width={768}
           height={1117}
           sizes='(max-width: 768px) 50vw, 25vw'

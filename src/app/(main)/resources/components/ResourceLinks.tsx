@@ -5,7 +5,7 @@ import { SquareArrowOutUpRight } from 'lucide-react'
 const ResourceLinks = () => {
   return (
     <div className='py-3'>
-      <h3 className='text-primary text-center text-lg-start'>Links</h3>
+      <h3 className='text-primary text-lg-start text-center'>Links</h3>
       <ul className='list-group'>
         <a
           href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5871310/'
