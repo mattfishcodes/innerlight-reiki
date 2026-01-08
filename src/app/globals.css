@@ -8,6 +8,7 @@
   --color-secondary: rgb(255, 249, 11);
 
   --font-noto-sans: var(--font-noto-sans);
+  --font-noto-sans-display: var(--font-noto-sans-display);
   --font-noto-serif: var(--font-noto-serif);
   --font-noto-serif-display: var(--font-noto-serif-display);
   --font-noto-sans-jp: var(--font-noto-sans-jp);

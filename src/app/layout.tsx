@@ -1,12 +1,42 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import {
-  notoSans,
-  notoSansDisplay,
-  notoSansJP,
-  notoSerif,
-  notoSerifDisplay,
-} from './fonts'
+  Noto_Sans,
+  Noto_Sans_Display,
+  Noto_Sans_JP,
+  Noto_Serif,
+  Noto_Serif_Display,
+} from 'next/font/google'
+
+const notoSans = Noto_Sans({
+  display: 'swap',
+  subsets: ['latin'],
+  variable: '--font-noto-sans',
+})
+
+const notoSansDisplay = Noto_Sans_Display({
+  display: 'swap',
+  subsets: ['latin'],
+  variable: '--font-noto-sans-display',
+})
+
+const notoSansJP = Noto_Sans_JP({
+  display: 'swap',
+  subsets: ['latin'],
+  variable: '--font-noto-sans-jp',
+})
+
+const notoSerif = Noto_Serif({
+  display: 'swap',
+  subsets: ['latin'],
+  variable: '--font-noto-serif',
+})
+
+const notoSerifDisplay = Noto_Serif_Display({
+  display: 'swap',
+  subsets: ['latin'],
+  variable: '--font-noto-serif-display',
+})
 
 export const metadata: Metadata = {
   title: 'Inner Light Reiki',
