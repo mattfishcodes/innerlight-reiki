@@ -41,7 +41,7 @@ const Header = () => {
 
   return (
     <nav className='bg-primary flex justify-center'>
-      <div className='container flex items-center justify-between'>
+      <div className='container flex items-center justify-between px-4 py-4 lg:px-0'>
         <div className='w-[50%] lg:w-[25%]'>
           <Link className='' href='/home'>
             <Image
@@ -65,7 +65,7 @@ const Header = () => {
                   <Link
                     className={cn(
                       'text-secondary transition-colors hover:text-white',
-                      pn.startsWith(r.href) && 'text-white',
+                      pn === r.href && 'text-white',
                     )}
                     href={r.href}
                   >
@@ -104,24 +104,24 @@ const Header = () => {
             'origin-top transform-gpu',
             'transition-all duration-300 ease-in-out',
             'pointer-events-none -translate-y-full opacity-0',
-            'flex flex-col',
+            'flex flex-col py-4',
             'motion-reduce:transition-none',
             'text-right',
             open && 'pointer-events-auto translate-y-0 opacity-100',
           )}
         >
-          <div className='px-4 py-2'>
+          <div className='mx-4'>
             <button onClick={() => setOpen(false)}>
               <X className='stroke-secondary' size={24} />
             </button>
           </div>
-          <ul className=''>
+          <ul className='flex flex-col gap-2'>
             {routes.map((v, i) => (
-              <li key={i} className=''>
+              <li key={i} className='mx-4'>
                 <Link
                   className={cn(
-                    'text-secondary m-2 p-0',
-                    pn.startsWith(v.href) && 'text-white',
+                    'text-secondary',
+                    pn === v.href && 'text-white',
                   )}
                   href={v.href}
                   onClick={() => setOpen(false)}

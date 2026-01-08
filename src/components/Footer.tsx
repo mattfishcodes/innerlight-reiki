@@ -4,36 +4,45 @@ import routes from '@/app/routes'
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
+import { cn } from '@/lib/utils'
 
 const Footer = () => {
   const pn = usePathname()
 
   return (
-    <div className='border-top'>
-      <div className='d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between navbar navbar-light container'>
-        <div className='d-flex align-items-center flex-column flex-lg-row gap-lg-3 mb-lg-0 mb-1 gap-1'>
+    <div className='flex justify-center'>
+      <div className='container flex flex-col justify-center px-4 py-4 lg:flex-row lg:justify-between lg:px-0'>
+        <div className='mb-1 flex flex-col items-center gap-1 lg:mb-0 lg:flex-row lg:gap-3'>
           <Image
             src='/base_icon_transparent_background.png'
             alt=''
-            className='img-fluid d-none d-lg-block me-4'
+            className='me-4 hidden lg:block'
             width={20}
             height={20}
             unoptimized
           />
-          {routes.map((v, i) => (
-            <Link
-              className={`nav-link p-0 ${pn === v.href ? 'active' : ''}`}
-              href={v.href}
-              key={i}
-            >
-              {v.name}
-            </Link>
-          ))}
+          {routes.map((r, i) => {
+            return (
+              <Link
+                className={cn(
+                  'hover:text-primary p-0 transition-all',
+                  pn === r.href && 'text-primary',
+                )}
+                href={r.href}
+                key={i}
+              >
+                {r.name}
+              </Link>
+            )
+          })}
         </div>
 
-        <div className='d-flex align-items-center flex-column flex-lg-row gap-lg-3 gap-1'>
+        <div className='flex flex-col items-center gap-1 lg:flex-row lg:gap-3'>
           <Link
-            className={`nav-link ${pn === '/privacy-policy' ? 'active' : ''}`}
+            className={cn(
+              'hover:text-primary transition-all',
+              pn === 'privacy-policy' && 'text-primary',
+            )}
             href='/privacy-policy'
           >
             Privacy Policy
