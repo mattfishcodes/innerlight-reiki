@@ -22,12 +22,12 @@ const WhatIsReiki = () => {
           through all living things. When energy is blocked, it can lead to
           emotional, physical and spiritual imbalances.
         </p>
-        <hr className='border-primary rounded-md border' />
-        <p className='py-4 text-xl font-light'>
+        <hr className='border-primary my-4 rounded-md border' />
+        <p className='m-0 text-xl font-light'>
           Reiki is NOT a substitute or replacement for conventional medical
           treatment.
         </p>
-        <hr className='border-primary rounded-md border' />
+        <hr className='border-primary my-4 rounded-md border' />
         <p className='mb-3 lg:m-0'>
           During a Reiki session, energy is shared by a trained practitioner
           through touch and intention to promote the health of the body, mind

@@ -13,9 +13,11 @@ const PrivacyPolicy = () => {
         At Inner Light Reiki, we are committed to protecting your privacy. This
         Privacy Policy explains how we collect, use, disclose, and safeguard
         your information when you visit our website{' '}
-        <a href='https://innerlightreiki.net'>https://innerlightreiki.net</a>.
-        Please read this policy carefully to understand our practices regarding
-        your personal data.
+        <a href='https://innerlightreiki.net' className='underline'>
+          https://innerlightreiki.net
+        </a>
+        . Please read this policy carefully to understand our practices
+        regarding your personal data.
       </p>
 
       <p>

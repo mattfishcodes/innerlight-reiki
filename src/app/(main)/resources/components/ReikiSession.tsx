@@ -16,12 +16,12 @@ const ReikiSession = () => {
         the on the your preference. I will hover my hands over and/or place my
         hands lightly on specific parts of the body for the sharing of energy.
       </p>
-      <hr className='border-primary rounded-md border' />
-      <p className='py-4 text-xl font-light'>
+      <hr className='border-primary my-4 rounded-md border' />
+      <p className='m-0 text-xl font-light'>
         You may feel many different sensations such as warmth, coolness,
         calmness, or relaxation.
       </p>
-      <hr className='border-primary rounded-md border' />
+      <hr className='border-primary my-4 rounded-md border' />
       <p className='m-0'>
         Some people even experience visual phenomena such as seeing colors. It
         is also not uncommon to not feel much of anything at all. These are all

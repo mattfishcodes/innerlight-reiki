@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div className='py-3'>
       <Bio />
-      <hr className='border-primary rounded-xl border' />
+      <hr className='border-primary my-4 rounded-xl border' />
       <Qualifications />
     </div>
   )
