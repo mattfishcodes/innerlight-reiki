@@ -24,7 +24,7 @@ const Home = () => {
 
       <div className='m-5'>
         <button
-          className='bg-primary hover:bg-primary-dark cursor-pointer rounded-md p-4 text-2xl text-white transition-all hover:scale-105'
+          className='bg-primary hover:bg-primary-100 cursor-pointer rounded-md p-4 text-2xl text-white transition-all hover:scale-105'
           onClick={handleShow}
         >
           Book an Appointment Now

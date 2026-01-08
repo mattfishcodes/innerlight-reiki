@@ -31,7 +31,7 @@ const BookingModal = ({
         <div>
           <p>What type of appointment would you like to book?</p>
           <button
-            className='hover:bg-primary-dark bg-primary mx-2 cursor-pointer rounded-md px-4 py-2 text-white transition-colors'
+            className='hover:bg-primary-100 bg-primary mx-2 cursor-pointer rounded-md px-4 py-2 text-white transition-colors'
             onClick={() => {
               window.open(
                 'https://inner-light-reiki.moxieapp.com/public/inner-light-reiki/60-minute-in-person',
@@ -42,7 +42,7 @@ const BookingModal = ({
             In Person
           </button>
           <button
-            className='hover:bg-primary-dark bg-primary mx-2 cursor-pointer rounded-md px-4 py-2 text-white transition-colors'
+            className='hover:bg-primary-100 bg-primary mx-2 cursor-pointer rounded-md px-4 py-2 text-white transition-colors'
             onClick={() => {
               window.open(
                 'https://inner-light-reiki.moxieapp.com/public/inner-light-reiki/60-minute-virtual',
