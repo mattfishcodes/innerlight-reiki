@@ -1,5 +1,6 @@
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
+import PageWrapper from '@/components/PageWrapper'
 
 export default function MainLayout({
   children,
@@ -9,7 +10,7 @@ export default function MainLayout({
   return (
     <>
       <Header />
-      {children}
+      <PageWrapper>{children}</PageWrapper>
       <Footer />
     </>
   )

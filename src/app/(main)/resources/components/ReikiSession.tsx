@@ -3,7 +3,7 @@
 const ReikiSession = () => {
   return (
     <div>
-      <h3 className='text-primary text-lg-start text-center'>Reiki Session</h3>
+      <h3 className='text-primary text-center lg:text-start'>Reiki Session</h3>
 
       <p className='m-0'>
         The energy sharing session takes about 45 minutes. I will spend some
@@ -16,12 +16,12 @@ const ReikiSession = () => {
         the on the your preference. I will hover my hands over and/or place my
         hands lightly on specific parts of the body for the sharing of energy.
       </p>
-      <hr className='border-primary rounded border' />
-      <p className='lead m-0'>
+      <hr className='border-primary rounded-md border' />
+      <p className='py-4 text-xl font-light'>
         You may feel many different sensations such as warmth, coolness,
         calmness, or relaxation.
       </p>
-      <hr className='border-primary rounded border' />
+      <hr className='border-primary rounded-md border' />
       <p className='m-0'>
         Some people even experience visual phenomena such as seeing colors. It
         is also not uncommon to not feel much of anything at all. These are all

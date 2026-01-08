@@ -2,9 +2,8 @@
 
 import { useEffect, useRef, useState } from 'react'
 import Script from 'next/script'
-import styles from './page.module.scss'
-import PageWrapper from '../../../components/PageWrapper'
 import { LoaderCircle } from 'lucide-react'
+import { cn } from '@/lib/utils'
 
 export default function Contact() {
   const [loaded, setLoaded] = useState(false)
@@ -58,26 +57,29 @@ export default function Contact() {
   }, [])
 
   return (
-    <PageWrapper>
+    <>
       <Script
         type='text/javascript'
         src='https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.10/iframeResizer.min.js'
       ></Script>
-      <div style={{ width: '100%', minHeight: '600px' }} className='py-4'>
-        <h2 className='text-primary text-center'>
+      <div style={{ width: '100%', minHeight: '600px' }} className='py-8'>
+        <h2 className='text-primary text-center font-semibold'>
           Fill out this form and I&apos;ll be in touch as soon as possible!
         </h2>
         <iframe
           id='moxie-website-contact-form'
           ref={iframeRef}
-          className={`${styles.iframe} ${loaded ? styles.loaded : ''} rounded`}
+          className={cn(
+            'border-primary my-8 hidden max-h-full min-w-full rounded-md border-2',
+            loaded && 'block',
+          )}
         ></iframe>
         {!loaded && (
-          <div className='d-flex justify-content-center'>
-            <LoaderCircle className={styles.spinner} />
+          <div className='flex justify-center py-8'>
+            <LoaderCircle size={64} className='text-primary animate-spin' />
           </div>
         )}
       </div>
-    </PageWrapper>
+    </>
   )
 }

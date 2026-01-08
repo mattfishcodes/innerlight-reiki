@@ -4,12 +4,12 @@ import Image from 'next/image'
 
 const Bio = () => {
   return (
-    <div className='d-lg-flex align-items-stretch gap-3'>
-      <div className='mb-lg-0 mb-3'>
+    <div className='items-stretch gap-3 lg:flex'>
+      <div className='mb-3'>
         <Image
           src='reiki-sitting'
           alt=''
-          className='img-fluid h-100 rounded'
+          className='rounded-xl'
           width={1200}
           height={1487}
           sizes='(max-width: 768px) 50vw, 25vw'
@@ -31,13 +31,15 @@ const Bio = () => {
         <p>
           In the spring of 2018, I began a Japanese Reiki Level 1 class taught
           by Dr. Sally Littleton, Master Teacher and founder of{' '}
-          <a href='https://enlightenmentreiki.com/'>Enlightenment Reiki</a>. It
-          was a fulfilling experience. I continued on and earned my Reiki Levels
-          2 and 3 with Dr. Littleton over the next year and a half. I completed
-          my Master Teacher certification in May of 2021. I also completed an
-          Animal Reiki certification in 2019.
+          <a href='https://enlightenmentreiki.com/' className='underline'>
+            Enlightenment Reiki
+          </a>
+          . It was a fulfilling experience. I continued on and earned my Reiki
+          Levels 2 and 3 with Dr. Littleton over the next year and a half. I
+          completed my Master Teacher certification in May of 2021. I also
+          completed an Animal Reiki certification in 2019.
         </p>
-        <p className='mb-0'>
+        <p>
           Having a daily Reiki practice helps me to manage stress and feel
           better physically, emotionally, and spiritually. My family and friends
           feel that it helps them when I share Reiki with them. I find that it

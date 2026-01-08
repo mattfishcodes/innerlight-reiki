@@ -4,14 +4,11 @@ import Image from 'next/image'
 
 const WhatIsReiki = () => {
   return (
-    <div className='d-lg-flex align-items-stretch mb-3 gap-3'>
-      <div className='order-lg-2'>
-        <h3 className='text-primary text-lg-start text-center'>
+    <div className='mb-3 items-stretch gap-3 lg:flex'>
+      <div className='lg:order-2'>
+        <h3 className='text-primary text-center lg:text-start'>
           What is Reiki? (
-          <span
-            lang='ja-jp'
-            style={{ fontFamily: 'var(--font-noto-sans-jp)', fontWeight: 300 }}
-          >
+          <span lang='ja-jp' className='font-noto-sans-jp font-light'>
             レイキ
           </span>
           )
@@ -25,13 +22,13 @@ const WhatIsReiki = () => {
           through all living things. When energy is blocked, it can lead to
           emotional, physical and spiritual imbalances.
         </p>
-        <hr className='border-primary rounded border' />
-        <p className='lead fw-medium m-0'>
+        <hr className='border-primary rounded-md border' />
+        <p className='py-4 text-xl font-light'>
           Reiki is NOT a substitute or replacement for conventional medical
           treatment.
         </p>
-        <hr className='border-primary rounded border' />
-        <p className='m-lg-0 mb-3'>
+        <hr className='border-primary rounded-md border' />
+        <p className='mb-3 lg:m-0'>
           During a Reiki session, energy is shared by a trained practitioner
           through touch and intention to promote the health of the body, mind
           and spirit. Common reactions after a Reiki session include feelings of
@@ -46,7 +43,7 @@ const WhatIsReiki = () => {
         <Image
           src='pagoda'
           alt=''
-          className='img-fluid h-100 rounded'
+          className='rounded-md'
           width={768}
           height={1117}
           sizes='(max-width: 768px) 50vw, 25vw'
