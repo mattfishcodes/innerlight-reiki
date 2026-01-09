@@ -13,8 +13,8 @@ const ReikiSession = () => {
         shared in a peaceful, quiet setting. You may lie on a table or sit in a
         chair. You will be fully clothed and a blanket can be used for added
         warmth and comfort. Soft music may be played in the background depending
-        the on the your preference. I will hover my hands over and/or place my
-        hands lightly on specific parts of the body for the sharing of energy.
+        on the your preference. I will hover my hands over and/or place my hands
+        lightly on specific parts of the body for the sharing of energy.
       </p>
       <hr className='border-primary my-4 rounded-md border' />
       <p className='m-0 text-xl font-light'>

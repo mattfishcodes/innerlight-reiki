@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const services = [
   {
-    price: 60,
+    price: 40,
     title: 'In Person Reiki',
     description:
       'Experience a personalized in-person Reiki session designed to \
@@ -12,7 +12,7 @@ const services = [
             energy transfer.',
   },
   {
-    price: 50,
+    price: 30,
     title: 'Virtual Reiki',
     description:
       'Experience a virtual Reiki session via Zoom or FaceTime, where \

@@ -14,7 +14,7 @@ const Disclaimer = () => {
             or treatment.
           </strong>
         </p>
-        <p>
+        <p className='mb-0'>
           If you have any medical concerns or require medical assistance, please
           consult with a licensed healthcare professional.
         </p>

@@ -43,7 +43,7 @@ const Qualifications = () => {
           </span>
         </li>
         <li className='px-4 py-2'>
-          <strong>Member of the Rieki Healing Association</strong>
+          <strong>Member of the Reiki Healing Association</strong>
         </li>
       </ul>
     </div>
