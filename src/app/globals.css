@@ -4,7 +4,7 @@
 
 @theme {
   --color-primary: oklch(0.3429 0.1103 256.1);
-  --color-primary-100: oklch(0.3229 0.1103 256.1);
+  --color-primary-100: oklch(0.3 0.1103 256.1);
   --color-secondary: oklch(0.9557 0.2049 107.93);
 
   --font-noto-sans: var(--font-noto-sans);
