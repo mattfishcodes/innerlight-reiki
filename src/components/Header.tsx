@@ -117,7 +117,10 @@ const Header = () => {
           </div>
           <ul className='flex flex-col gap-2'>
             {routes.map((v, i) => (
-              <li key={i} className='mx-4'>
+              <li
+                key={i}
+                className='active:text-primary px-4 py-2 active:bg-white'
+              >
                 <Link
                   className={cn(
                     'text-secondary',
