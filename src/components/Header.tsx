@@ -42,7 +42,7 @@ const Header = () => {
   return (
     <nav className='bg-primary flex justify-center'>
       <div className='container flex items-center justify-between px-4 py-4 lg:px-0'>
-        <div className='w-[50%] lg:w-[25%]'>
+        <div className='w-[50%] md:w-[25%]'>
           <Link className='' href='/home'>
             <Image
               src='/customcolor_logo_transparent_background.png'

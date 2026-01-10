@@ -21,7 +21,7 @@ const HeroSection = () => {
       </p>
       <p className='mx-auto my-3 text-xl'>
         I believe in the profound ability of Reiki to promote healing, balance,
-        and inner peace. <br />
+        and inner peace. <br className='hidden lg:block' />
         My mission is to guide you on your journey towards well-being through
         the gentle practice of Reiki.
       </p>

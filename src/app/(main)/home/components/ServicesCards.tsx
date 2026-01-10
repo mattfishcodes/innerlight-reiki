@@ -43,7 +43,7 @@ const ServicesCards = () => {
               />
             </div>
             <div className='p-4'>
-              <h4>{s.title}</h4>
+              <h3>{s.title}</h3>
               <div>{s.description}</div>
             </div>
           </div>

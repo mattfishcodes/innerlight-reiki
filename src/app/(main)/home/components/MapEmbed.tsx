@@ -25,7 +25,6 @@ const MapEmbed = () => {
           console.log('loaded')
         }}
         className={cn('hidden h-full w-full border-0', loaded && 'block')}
-        // loading='eager'
         referrerPolicy='no-referrer-when-downgrade'
       />
     </div>
