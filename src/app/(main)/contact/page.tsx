@@ -5,6 +5,8 @@ import Script from 'next/script'
 import { LoaderCircle } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
+const isProduction = process.env.NODE_ENV === 'production'
+
 export default function Contact() {
   const [loaded, setLoaded] = useState(false)
   const iframeRef = useRef<HTMLIFrameElement | null>(null)
@@ -53,7 +55,9 @@ export default function Contact() {
   }
 
   useEffect(() => {
-    injectForm()
+    if (isProduction) {
+      injectForm()
+    }
   }, [])
 
   return (
