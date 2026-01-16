@@ -34,6 +34,8 @@ const notoSerifDisplay = Noto_Serif_Display({
 export const metadata: Metadata = {
   title: 'Inner Light Reiki',
   description: 'Reiki energy sharing',
+  manifest: '/site.webmanifest',
+  appleWebApp: { capable: true, title: 'Inner Light Reiki' },
 }
 
 export default function RootLayout({
@@ -44,21 +46,6 @@ export default function RootLayout({
   return (
     <html lang='en' data-scroll-behavior='smooth'>
       <head>
-        <link
-          rel='icon'
-          type='image/png'
-          href='/favicon-96x96.png'
-          sizes='96x96'
-        />
-        <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
-        <link rel='shortcut icon' href='/favicon.ico' />
-        <link
-          rel='apple-touch-icon'
-          sizes='180x180'
-          href='/apple-touch-icon.png'
-        />
-        <meta name='apple-mobile-web-app-title' content='Inner Light Reiki' />
-        <link rel='manifest' href='/site.webmanifest' />
         <link
           rel='preload'
           href='/images/mountain-lake-blue-1200.webp'
