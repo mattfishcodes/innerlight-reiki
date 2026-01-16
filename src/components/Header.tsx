@@ -10,8 +10,12 @@ const Header = () => {
     <header className='bg-primary flex justify-center'>
       <div className='container flex items-center justify-between px-4 py-4 lg:px-0'>
         <div className='w-[50%] md:w-[25%]'>
-          <Link className='' href='/home'>
+          <Link
+            className='group focus-visible:ring-0 focus-visible:outline-0'
+            href='/home'
+          >
             <Image
+              className='group-focus-visible:ring-ring/50 group-focus-visible:ring-3'
               src='/customcolor_logo_transparent_background.png'
               alt=''
               width={2969}

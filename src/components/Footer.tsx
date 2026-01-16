@@ -9,6 +9,22 @@ import { cn } from '@/lib/utils'
 const Footer = () => {
   const pn = usePathname()
 
+  const linkStyle = cn(
+    'text-foreground flex flex-col gap-1 rounded-3xl px-4 py-2 text-lg transition-all outline-none md:text-sm',
+
+    'hover:text-secondary-foreground hover:bg-white',
+    'active:text-secondary-foreground active:bg-white',
+
+    'data-[active=true]:bg-primary/20',
+    'data-[active=true]:hover:text-secondary-foreground data-[active=true]:hover:bg-white',
+    'data-[active=true]:active:text-secondary-foreground data-[active=true]:active:bg-white',
+
+    'focus-visible:ring-ring/50 focus-visible:ring-3',
+
+    '[&_svg:not([class*="size-"])]:size-4',
+    '[&_svg:not([class*="text-"])]:text-muted-foreground',
+  )
+
   return (
     <div className='flex justify-center'>
       <div className='container flex flex-col justify-center px-4 py-4 lg:flex-row lg:justify-between lg:px-0'>
@@ -21,15 +37,16 @@ const Footer = () => {
             height={20}
             unoptimized
           />
+
           {routes.map((r, i) => {
+            const isActive = pn === r.href
             return (
               <Link
-                className={cn(
-                  'hover:text-primary p-0 transition-all',
-                  pn === r.href && 'text-primary',
-                )}
+                className={linkStyle}
                 href={r.href}
                 key={i}
+                data-active={isActive}
+                aria-current={isActive && 'page'}
               >
                 {r.name}
               </Link>
@@ -39,11 +56,10 @@ const Footer = () => {
 
         <div className='flex flex-col items-center gap-1 lg:flex-row lg:gap-3'>
           <Link
-            className={cn(
-              'hover:text-primary transition-all',
-              pn === 'privacy-policy' && 'text-primary',
-            )}
+            className={linkStyle}
             href='/privacy-policy'
+            data-active={pn === '/privacy-policy/'}
+            aria-current={pn === '/privacy-policy/' && 'page'}
           >
             Privacy Policy
           </Link>

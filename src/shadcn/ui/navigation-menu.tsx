@@ -37,7 +37,7 @@ function NavigationMenuList({
     <NavigationMenuPrimitive.List
       data-slot='navigation-menu-list'
       className={cn(
-        'group flex flex-1 list-none items-center justify-center gap-1 data-[orientation=vertical]:flex-col',
+        'group flex flex-1 list-none items-center justify-center gap-2 data-[orientation=vertical]:flex-col',
         className,
       )}
       {...props}
@@ -137,7 +137,7 @@ function NavigationMenuLink({
 
         'data-active:bg-white/20',
         'data-active:hover:text-secondary-foreground data-active:hover:bg-white',
-        'data-active:focus:text-secondary-foreground',
+        'data-active:focus:text-white',
         'data-active:active:text-secondary-foreground data-active:active:bg-white',
 
         'focus-visible:ring-ring/50 focus-visible:ring-3 focus-visible:outline-1',
