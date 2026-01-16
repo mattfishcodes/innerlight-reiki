@@ -3,7 +3,6 @@ import type { Metadata } from 'next'
 import {
   Noto_Sans,
   Noto_Sans_Display,
-  Noto_Sans_JP,
   Noto_Serif,
   Noto_Serif_Display,
 } from 'next/font/google'
@@ -18,12 +17,6 @@ const notoSansDisplay = Noto_Sans_Display({
   display: 'swap',
   subsets: ['latin'],
   variable: '--font-noto-sans-display',
-})
-
-const notoSansJP = Noto_Sans_JP({
-  display: 'swap',
-  subsets: ['latin'],
-  variable: '--font-noto-sans-jp',
 })
 
 const notoSerif = Noto_Serif({
@@ -73,7 +66,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${notoSans.variable} ${notoSansDisplay.variable} ${notoSansJP.variable} ${notoSerif.variable} ${notoSerifDisplay.variable} antialiased`}
+        className={`${notoSans.variable} ${notoSansDisplay.variable} ${notoSerif.variable} ${notoSerifDisplay.variable} antialiased`}
       >
         {children}
       </body>

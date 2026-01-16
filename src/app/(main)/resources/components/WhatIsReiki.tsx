@@ -8,7 +8,7 @@ const WhatIsReiki = () => {
       <div className='lg:order-2'>
         <h3 className='text-primary text-center lg:text-start'>
           What is Reiki? (
-          <span lang='ja-jp' className='font-noto-sans-jp font-light'>
+          <span lang='ja-jp' className='font-light'>
             レイキ
           </span>
           )
