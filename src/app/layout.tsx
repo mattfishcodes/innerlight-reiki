@@ -6,6 +6,7 @@ import {
   Noto_Serif,
   Noto_Serif_Display,
 } from 'next/font/google'
+import { Toaster } from 'sonner'
 
 const notoSans = Noto_Sans({
   display: 'swap',
@@ -56,6 +57,7 @@ export default function RootLayout({
         className={`${notoSans.variable} ${notoSansDisplay.variable} ${notoSerif.variable} ${notoSerifDisplay.variable} antialiased`}
       >
         {children}
+        <Toaster position='top-center' toastOptions={{ duration: 10000 }} />
       </body>
     </html>
   )
