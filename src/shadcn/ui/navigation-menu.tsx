@@ -135,9 +135,8 @@ function NavigationMenuLink({
         'focus:text-white',
         'active:text-secondary-foreground active:bg-white',
 
-        'data-active:bg-white/20',
+        'data-active:bg-white/10',
         'data-active:hover:text-secondary-foreground data-active:hover:bg-white',
-        'data-active:focus:text-white',
         'data-active:active:text-secondary-foreground data-active:active:bg-white',
 
         'focus-visible:ring-ring/50 focus-visible:ring-3 focus-visible:outline-1',
