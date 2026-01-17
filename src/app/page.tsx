@@ -3,6 +3,8 @@
 import Image from 'next/image'
 import { useState } from 'react'
 import { cn } from '@/lib/utils'
+import mountainLakeImg from '@/assets/images/mountain-lake.jpg'
+import secondaryColorLogo from '@/assets/images/customcolor_logo_transparent_background.png'
 
 export default function Welcome() {
   const [loaded, setLoaded] = useState(false)
@@ -14,7 +16,7 @@ export default function Welcome() {
       )}
     >
       <Image
-        src='/mountain-lake.png'
+        src={mountainLakeImg}
         alt=''
         fill
         sizes='(max-width: 1200px) 400px, 1200px'
@@ -23,15 +25,13 @@ export default function Welcome() {
         onLoad={() => setLoaded(true)}
       />
 
-      <div className='flex flex-col items-center justify-center px-3'>
+      <div className='container flex flex-col items-center justify-center px-3'>
         <Image
-          src='/customcolor_logo_transparent_background.png'
+          src={secondaryColorLogo}
           alt=''
-          width={1000}
-          height={500}
           className='drop-shadow-2xl/50 drop-shadow-black'
+          sizes='(max-width: 1200px) 400px, 1200px'
           priority
-          unoptimized
         />
         <a
           id='enter-link'

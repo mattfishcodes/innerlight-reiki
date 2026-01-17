@@ -1,11 +1,12 @@
 'use client'
 
 import Image from 'next/image'
+import pagodaImg from '@/assets/images/pagoda.jpg'
 
 const WhatIsReiki = () => {
   return (
     <div className='mb-3 items-stretch gap-3 lg:flex'>
-      <div className='lg:order-2'>
+      <div className='flex-5 lg:order-2'>
         <h3 className='text-primary text-center lg:text-start'>
           What is Reiki? (
           <span lang='ja-jp' className='font-light'>
@@ -39,13 +40,11 @@ const WhatIsReiki = () => {
           are in the process of dying.
         </p>
       </div>
-      <div>
+      <div className='flex-1'>
         <Image
-          src='pagoda'
+          src={pagodaImg}
           alt=''
           className='rounded-md'
-          width={768}
-          height={1117}
           sizes='(max-width: 768px) 50vw, 25vw'
         />
       </div>

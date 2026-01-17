@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Navbar } from './Navbar'
 import { Offcanvas } from './Offcanvas'
+import secondaryColorLogo from '@/assets/images/customcolor_logo_transparent_background.png'
 
 const Header = () => {
   return (
@@ -16,12 +17,10 @@ const Header = () => {
           >
             <Image
               className='group-focus-visible:ring-ring/50 group-focus-visible:ring-3'
-              src='/customcolor_logo_transparent_background.png'
+              src={secondaryColorLogo}
               alt=''
-              width={2969}
-              height={658}
+              sizes='30vw'
               priority
-              unoptimized
             />
           </Link>
         </div>

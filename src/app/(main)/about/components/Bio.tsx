@@ -1,22 +1,21 @@
 'use client'
 
 import Image from 'next/image'
+import sittingPortrait from '@/assets/images/sitting-portrait.jpg'
 
 const Bio = () => {
   return (
     <div className='items-stretch gap-3 lg:flex'>
-      <div className='mb-3'>
+      <div className='mb-3 flex-1'>
         <Image
-          src='reiki-sitting'
+          src={sittingPortrait}
           alt=''
           className='rounded-xl'
-          width={1200}
-          height={1487}
           sizes='(max-width: 768px) 50vw, 25vw'
         />
       </div>
 
-      <div>
+      <div className='flex-3'>
         <h3 className='text-primary'>Julie Adams</h3>
         <p>
           I worked for more than 35 years as a registered nurse specializing in

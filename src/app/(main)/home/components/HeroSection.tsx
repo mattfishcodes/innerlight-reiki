@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import primaryColorTextLogo from '@/assets/images/base_textlogo_transparent_background.png'
 
 const HeroSection = () => {
   return (
@@ -8,12 +9,10 @@ const HeroSection = () => {
       <div className='flex flex-col items-center py-4'>
         <Image
           className='lg:w-[80%]'
-          src='/base_textlogo_transparent_background.png'
+          src={primaryColorTextLogo}
           alt=''
-          width={1489}
-          height={290}
+          sizes='90vw'
           priority
-          unoptimized
         />
       </div>
       <p className='font-noto-serif-display text-2xl font-semibold'>

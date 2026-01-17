@@ -46,13 +46,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' data-scroll-behavior='smooth'>
-      <head>
-        <link
-          rel='preload'
-          href='/images/mountain-lake-blue-1200.webp'
-          as='image'
-        />
-      </head>
+      <head />
       <body
         className={`${notoSans.variable} ${notoSansDisplay.variable} ${notoSerif.variable} ${notoSerifDisplay.variable} antialiased`}
       >

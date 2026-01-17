@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { cn } from '@/lib/utils'
+import primaryColorIcon from '@/assets/images//base_icon_transparent_background.png'
 
 const Footer = () => {
   const pn = usePathname()
@@ -30,12 +31,10 @@ const Footer = () => {
       <div className='container flex flex-col justify-center px-4 py-4 lg:flex-row lg:justify-between lg:px-0'>
         <div className='mb-1 flex flex-col items-center gap-1 lg:mb-0 lg:flex-row lg:gap-3'>
           <Image
-            src='/base_icon_transparent_background.png'
+            src={primaryColorIcon}
             alt=''
-            className='me-4 hidden lg:block'
-            width={20}
-            height={20}
-            unoptimized
+            className='me-4 hidden h-20 w-auto lg:block'
+            sizes='5vw'
           />
 
           {routes.map((r, i) => {
