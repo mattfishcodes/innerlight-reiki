@@ -27,7 +27,7 @@ const Footer = () => {
   )
 
   return (
-    <div className='flex justify-center'>
+    <footer className='flex justify-center bg-white'>
       <div className='container flex flex-col justify-center px-4 py-4 lg:flex-row lg:justify-between lg:px-0'>
         <div className='mb-1 flex flex-col items-center gap-1 lg:mb-0 lg:flex-row lg:gap-3'>
           <Image
@@ -65,7 +65,7 @@ const Footer = () => {
           <span>&copy; 2025 Inner Light Reiki</span>
         </div>
       </div>
-    </div>
+    </footer>
   )
 }
 
