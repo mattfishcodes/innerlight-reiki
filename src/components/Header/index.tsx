@@ -2,9 +2,11 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
+
+import secondaryColorLogo from '@/assets/images/customcolor_logo_transparent_background.png'
+
 import { Navbar } from '../Navbar'
 import { Offcanvas } from '../Offcanvas'
-import secondaryColorLogo from '@/assets/images/customcolor_logo_transparent_background.png'
 
 export const Header = () => {
   return (

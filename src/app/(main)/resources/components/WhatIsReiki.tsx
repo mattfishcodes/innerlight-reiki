@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+
 import pagodaImg from '@/assets/images/pagoda.jpg'
 
 const WhatIsReiki = () => {

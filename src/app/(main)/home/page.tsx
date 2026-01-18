@@ -1,9 +1,9 @@
 'use client'
 
-import HeroSection from './components/HeroSection'
-import ServicesCards from './components/ServicesCards'
-import MapEmbed from './components/MapEmbed'
 import Disclaimer from './components/Disclaimer'
+import HeroSection from './components/HeroSection'
+import MapEmbed from './components/MapEmbed'
+import ServicesCards from './components/ServicesCards'
 
 const Home = () => {
   return (

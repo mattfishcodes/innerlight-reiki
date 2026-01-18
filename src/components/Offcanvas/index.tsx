@@ -1,5 +1,9 @@
 'use client'
 
+import { useState } from 'react'
+
+import { Menu } from 'lucide-react'
+
 import { Navbar } from '@/components/Navbar'
 import { Button } from '@/shadcn/ui/button'
 import {
@@ -10,8 +14,6 @@ import {
   SheetTitle,
   SheetTrigger,
 } from '@/shadcn/ui/sheet'
-import { Menu } from 'lucide-react'
-import { useState } from 'react'
 
 export const Offcanvas = () => {
   const [open, setOpen] = useState(false)

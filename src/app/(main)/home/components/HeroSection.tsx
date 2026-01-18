@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+
 import primaryColorTextLogo from '@/assets/images/base_textlogo_transparent_background.png'
 
 const HeroSection = () => {

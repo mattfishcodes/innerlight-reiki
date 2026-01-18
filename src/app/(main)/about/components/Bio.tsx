@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+
 import sittingPortrait from '@/assets/images/sitting-portrait.jpg'
 
 const Bio = () => {

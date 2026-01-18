@@ -1,11 +1,12 @@
 'use client'
 
-import routes from '@/app/routes'
-import Link from 'next/link'
 import Image from 'next/image'
+import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+
+import routes from '@/app/routes'
+import primaryColorIcon from '@/assets/images/base_icon_transparent_background.png'
 import { cn } from '@/lib/utils'
-import primaryColorIcon from '@/assets/images//base_icon_transparent_background.png'
 
 export const Footer = () => {
   const pn = usePathname()

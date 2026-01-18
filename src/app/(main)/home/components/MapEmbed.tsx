@@ -1,8 +1,10 @@
 'use client'
 
-import { cn } from '@/lib/utils'
-import { LoaderCircle } from 'lucide-react'
 import { useEffect, useRef, useState } from 'react'
+
+import { LoaderCircle } from 'lucide-react'
+
+import { cn } from '@/lib/utils'
 
 const isProduction = process.env.NODE_ENV === 'production'
 

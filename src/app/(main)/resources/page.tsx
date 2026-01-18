@@ -1,8 +1,8 @@
 'use client'
 
-import WhatIsReiki from './components/WhatIsReiki'
 import ReikiSession from './components/ReikiSession'
 import ResourceLinks from './components/ResourceLinks'
+import WhatIsReiki from './components/WhatIsReiki'
 
 const Resources = () => {
   return (

@@ -1,10 +1,12 @@
 'use client'
 
-import Image from 'next/image'
 import { useState } from 'react'
-import { cn } from '@/lib/utils'
-import mountainLakeImg from '@/assets/images/mountain-lake.jpg'
+
+import Image from 'next/image'
+
 import secondaryColorLogo from '@/assets/images/customcolor_logo_transparent_background.png'
+import mountainLakeImg from '@/assets/images/mountain-lake.jpg'
+import { cn } from '@/lib/utils'
 
 export default function Welcome() {
   const [loaded, setLoaded] = useState(false)

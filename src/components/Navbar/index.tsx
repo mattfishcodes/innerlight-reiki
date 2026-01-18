@@ -1,5 +1,8 @@
 'use client'
 
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+
 import routes from '@/app/routes'
 import {
   NavigationMenu,
@@ -7,8 +10,6 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from '@/shadcn/ui/navigation-menu'
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
 
 export const Navbar = ({
   orientation = 'horizontal',

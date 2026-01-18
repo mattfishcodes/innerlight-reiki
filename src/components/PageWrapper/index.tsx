@@ -1,9 +1,12 @@
 'use client'
 
-import { ReactNode } from 'react'
-import mountainBackgroundImg from '@/assets/images/mountain-lake-blue.jpg'
+import { type ReactNode } from 'react'
+
 import { motion, useScroll } from 'motion/react'
+
 import Image from 'next/image'
+
+import mountainBackgroundImg from '@/assets/images/mountain-lake-blue.jpg'
 
 export const PageWrapper = ({ children }: { children: ReactNode }) => {
   const { scrollY } = useScroll()

@@ -1,12 +1,14 @@
 import './globals.css'
-import type { Metadata } from 'next'
+import { Toaster } from 'sonner'
+
 import {
   Noto_Sans,
   Noto_Sans_Display,
   Noto_Serif,
   Noto_Serif_Display,
 } from 'next/font/google'
-import { Toaster } from 'sonner'
+
+import type { Metadata } from 'next'
 
 const notoSans = Noto_Sans({
   display: 'swap',
