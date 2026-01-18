@@ -8,12 +8,12 @@ import Image from 'next/image'
 
 import mountainBackgroundImg from '@/assets/images/mountain-lake-blue.jpg'
 
-export const PageWrapper = ({ children }: { children: ReactNode }) => {
+export const PageBackground = ({ children }: { children: ReactNode }) => {
   const { scrollY } = useScroll()
 
   return (
     <>
-      <div className='relative min-h-[80vh] overflow-hidden p-0'>
+      <div className='relative min-h-screen overflow-hidden p-0'>
         <motion.div style={{ y: scrollY }} className='absolute inset-0 -z-10'>
           <Image
             src={mountainBackgroundImg}
@@ -22,9 +22,7 @@ export const PageWrapper = ({ children }: { children: ReactNode }) => {
             className='object-cover object-[50%_30%] opacity-10'
           />
         </motion.div>
-        <div className='flex justify-center'>
-          <div className='container px-4 lg:px-0'>{children}</div>
-        </div>
+        {children}
       </div>
     </>
   )

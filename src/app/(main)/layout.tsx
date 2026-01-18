@@ -1,6 +1,7 @@
+import { Container } from '@/components/Container'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
-import { PageWrapper } from '@/components/PageWrapper'
+import { PageBackground } from '@/components/PageBackground'
 
 export default function MainLayout({
   children,
@@ -9,9 +10,11 @@ export default function MainLayout({
 }) {
   return (
     <>
-      <Header />
-      <PageWrapper>{children}</PageWrapper>
-      <Footer />
+      <PageBackground>
+        <Header />
+        <Container>{children}</Container>
+        <Footer />
+      </PageBackground>
     </>
   )
 }
