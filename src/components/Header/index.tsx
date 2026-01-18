@@ -2,11 +2,11 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { Navbar } from './Navbar'
-import { Offcanvas } from './Offcanvas'
+import { Navbar } from '../Navbar'
+import { Offcanvas } from '../Offcanvas'
 import secondaryColorLogo from '@/assets/images/customcolor_logo_transparent_background.png'
 
-const Header = () => {
+export const Header = () => {
   return (
     <header className='bg-primary flex justify-center'>
       <div className='container flex items-center justify-between px-4 py-4 lg:px-0'>
@@ -39,5 +39,3 @@ const Header = () => {
     </header>
   )
 }
-
-export default Header

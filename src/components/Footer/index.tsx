@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation'
 import { cn } from '@/lib/utils'
 import primaryColorIcon from '@/assets/images//base_icon_transparent_background.png'
 
-const Footer = () => {
+export const Footer = () => {
   const pn = usePathname()
 
   const linkStyle = cn(
@@ -68,5 +68,3 @@ const Footer = () => {
     </footer>
   )
 }
-
-export default Footer
