@@ -1,14 +1,13 @@
 'use client'
 
-import Image from 'next/image'
-
 import sittingPortrait from '@/assets/images/sitting-portrait.jpg'
+import { ImageWithSkeleton } from '@/components/ImageWithSkeleton'
 
 const Bio = () => {
   return (
     <div className='items-stretch gap-3 lg:flex'>
       <div className='mb-3 flex-1'>
-        <Image
+        <ImageWithSkeleton
           src={sittingPortrait}
           alt=''
           className='rounded-xl'

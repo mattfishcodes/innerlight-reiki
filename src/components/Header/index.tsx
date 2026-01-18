@@ -1,10 +1,10 @@
 'use client'
 
-import Image from 'next/image'
 import Link from 'next/link'
 
 import secondaryColorLogo from '@/assets/images/customcolor_logo_transparent_background.png'
 
+import { ImageWithSkeleton } from '../ImageWithSkeleton'
 import { Navbar } from '../Navbar'
 import { Offcanvas } from '../Offcanvas'
 
@@ -13,16 +13,13 @@ export const Header = () => {
     <header className='bg-primary flex justify-center'>
       <div className='container flex items-center justify-between px-4 py-4 lg:px-0'>
         <div className='w-[50%] md:w-[25%]'>
-          <Link
-            className='group focus-visible:ring-0 focus-visible:outline-0'
-            href='/home'
-          >
-            <Image
-              className='group-focus-visible:ring-ring/50 group-focus-visible:ring-3'
+          <Link className='' href='/home'>
+            <ImageWithSkeleton
+              className=''
               src={secondaryColorLogo}
               alt=''
               sizes='30vw'
-              priority
+              loading='eager'
             />
           </Link>
         </div>

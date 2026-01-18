@@ -1,8 +1,7 @@
 'use client'
 
-import Image from 'next/image'
-
 import pagodaImg from '@/assets/images/pagoda.jpg'
+import { ImageWithSkeleton } from '@/components/ImageWithSkeleton'
 
 const WhatIsReiki = () => {
   return (
@@ -42,7 +41,7 @@ const WhatIsReiki = () => {
         </p>
       </div>
       <div className='flex-1'>
-        <Image
+        <ImageWithSkeleton
           src={pagodaImg}
           alt=''
           className='rounded-md'

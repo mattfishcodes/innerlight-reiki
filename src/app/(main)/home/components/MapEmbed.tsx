@@ -2,9 +2,8 @@
 
 import { useEffect, useRef, useState } from 'react'
 
-import { LoaderCircle } from 'lucide-react'
-
 import { cn } from '@/lib/utils'
+import { Skeleton } from '@/shadcn/ui/skeleton'
 
 const isProduction = process.env.NODE_ENV === 'production'
 
@@ -20,7 +19,7 @@ const MapEmbed = () => {
   }, [])
   return (
     <div className='flex h-100 w-full items-center justify-center py-4'>
-      {!loaded && <LoaderCircle size={48} className='animate-spin' />}
+      {!loaded && <Skeleton className='size-full' />}
 
       <iframe
         ref={iframeRef}

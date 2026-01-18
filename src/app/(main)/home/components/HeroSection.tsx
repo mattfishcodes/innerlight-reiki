@@ -1,20 +1,20 @@
 'use client'
 
-import Image from 'next/image'
-
 import primaryColorTextLogo from '@/assets/images/base_textlogo_transparent_background.png'
+import { ImageWithSkeleton } from '@/components/ImageWithSkeleton'
 
 const HeroSection = () => {
   return (
     <>
       <div className='flex flex-col items-center py-4'>
-        <Image
-          className='lg:w-[80%]'
-          src={primaryColorTextLogo}
-          alt=''
-          sizes='90vw'
-          priority
-        />
+        <div className='lg:w-[80%]'>
+          <ImageWithSkeleton
+            src={primaryColorTextLogo}
+            alt=''
+            sizes='90vw'
+            loading='eager'
+          />
+        </div>
       </div>
       <p className='font-noto-serif-display text-2xl font-semibold'>
         Traverse City, MI
