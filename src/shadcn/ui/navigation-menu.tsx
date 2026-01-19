@@ -133,12 +133,11 @@ function NavigationMenuLink({
         'text-primary-foreground flex flex-col gap-1 rounded-3xl px-4 py-2 text-lg transition-all outline-none md:text-sm',
 
         'hover:text-secondary-foreground hover:bg-white',
-        'focus:text-white',
-        'active:text-secondary-foreground active:bg-white',
+        'active:text-secondary-foreground active:bg-white/80',
 
         'data-active:bg-white/10',
         'data-active:hover:text-secondary-foreground data-active:hover:bg-white',
-        'data-active:active:text-secondary-foreground data-active:active:bg-white',
+        'data-active:active:text-secondary-foreground data-active:active:bg-white/80',
 
         'focus-visible:ring-ring/50 focus-visible:ring-3 focus-visible:outline-1',
 

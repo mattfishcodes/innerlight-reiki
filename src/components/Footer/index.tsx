@@ -14,12 +14,12 @@ export const Footer = () => {
   const linkStyle = cn(
     'text-foreground flex flex-col gap-1 rounded-3xl px-4 py-2 text-lg transition-all outline-none md:text-sm',
 
-    'hover:text-secondary-foreground hover:bg-white',
-    'active:text-secondary-foreground active:bg-white',
+    'hover:bg-primary hover:text-white',
+    'active:bg-primary/80',
 
     'data-[active=true]:bg-primary/20',
-    'data-[active=true]:hover:text-secondary-foreground data-[active=true]:hover:bg-white',
-    'data-[active=true]:active:text-secondary-foreground data-[active=true]:active:bg-white',
+    'data-[active=true]:hover:bg-primary data-[active=true]:hover:text-white',
+    'data-[active=true]:active:bg-primary/80',
 
     'focus-visible:ring-ring/50 focus-visible:ring-3',
 
