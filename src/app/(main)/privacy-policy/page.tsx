@@ -2,7 +2,7 @@
 
 const PrivacyPolicy = () => {
   return (
-    <>
+    <main className='py-8'>
       <h1>Privacy Policy</h1>
 
       <p>
@@ -116,7 +116,7 @@ const PrivacyPolicy = () => {
         in our practices or legal requirements. We encourage you to review this
         page periodically for the latest information on our privacy practices.
       </p>
-    </>
+    </main>
   )
 }
 
