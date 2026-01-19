@@ -1,12 +1,13 @@
 'use client'
 
-import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 import routes from '@/app/routes'
 import primaryColorIcon from '@/assets/images/base_icon_transparent_background.png'
 import { cn } from '@/lib/utils'
+
+import { ImageWithSkeleton } from '../ImageWithSkeleton'
 
 export const Footer = () => {
   const pn = usePathname()
@@ -31,12 +32,14 @@ export const Footer = () => {
     <footer className='flex justify-center bg-white'>
       <div className='container flex flex-col justify-center px-4 py-4 lg:flex-row lg:justify-between lg:px-0'>
         <div className='mb-1 flex flex-col items-center gap-1 lg:mb-0 lg:flex-row lg:gap-3'>
-          <Image
-            src={primaryColorIcon}
-            alt=''
-            className='me-4 hidden h-20 w-auto lg:block'
-            sizes='5vw'
-          />
+          <div className='hidden h-20 w-auto lg:block'>
+            <ImageWithSkeleton
+              src={primaryColorIcon}
+              alt=''
+              sizes='5vw'
+              className='h-20 w-auto'
+            />
+          </div>
 
           {routes.map((r, i) => {
             const isActive = pn === r.href
@@ -63,7 +66,7 @@ export const Footer = () => {
           >
             Privacy Policy
           </Link>
-          <span>&copy; 2025 Inner Light Reiki</span>
+          <span className='py-4 lg:py-0'>&copy; 2025 Inner Light Reiki</span>
         </div>
       </div>
     </footer>
