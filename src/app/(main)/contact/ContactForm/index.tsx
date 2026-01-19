@@ -77,7 +77,7 @@ export const ContactForm = () => {
   }
 
   return (
-    <Card className='mx-auto w-full sm:max-w-md'>
+    <Card className='mx-auto w-full md:max-w-2xl'>
       <CardHeader>
         <CardTitle>Send a Message</CardTitle>
         <CardDescription>Get in contact with us.</CardDescription>
