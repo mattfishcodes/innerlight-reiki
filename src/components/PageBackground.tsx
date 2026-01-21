@@ -8,7 +8,7 @@ import Image from 'next/image'
 
 import mountainBackgroundImg from '@/assets/images/mountain-lake-blue.jpg'
 
-export const PageBackground = ({ children }: { children: ReactNode }) => {
+export default function PageBackground({ children }: { children: ReactNode }) {
   const { scrollY } = useScroll()
 
   return (

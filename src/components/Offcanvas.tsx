@@ -4,7 +4,7 @@ import { useState } from 'react'
 
 import { Menu } from 'lucide-react'
 
-import { Navbar } from '@/components/Navbar'
+import Navbar from '@/components/Navbar'
 import { Button } from '@/shadcn/ui/button'
 import {
   Sheet,
@@ -15,7 +15,7 @@ import {
   SheetTrigger,
 } from '@/shadcn/ui/sheet'
 
-export const Offcanvas = () => {
+export default function Offcanvas() {
   const [open, setOpen] = useState(false)
   return (
     <Sheet open={open} onOpenChange={setOpen}>

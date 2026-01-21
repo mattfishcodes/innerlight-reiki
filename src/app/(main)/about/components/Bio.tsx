@@ -1,7 +1,7 @@
 'use client'
 
 import sittingPortrait from '@/assets/images/sitting-portrait.jpg'
-import { ImageWithSkeleton } from '@/components/ImageWithSkeleton'
+import ImageWithSkeleton from '@/components/ImageWithSkeleton'
 
 const Bio = () => {
   return (

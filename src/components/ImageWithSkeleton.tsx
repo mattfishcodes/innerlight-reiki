@@ -7,7 +7,7 @@ import Image, { type StaticImageData } from 'next/image'
 import { cn } from '@/lib/utils'
 import { Skeleton } from '@/shadcn/ui/skeleton'
 
-export function ImageWithSkeleton({
+export default function ImageWithSkeleton({
   src,
   alt,
   sizes,

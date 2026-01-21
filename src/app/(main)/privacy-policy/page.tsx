@@ -1,6 +1,6 @@
 'use client'
 
-const PrivacyPolicy = () => {
+export default function PrivacyPolicy() {
   return (
     <main className='py-8'>
       <h1>Privacy Policy</h1>
@@ -119,5 +119,3 @@ const PrivacyPolicy = () => {
     </main>
   )
 }
-
-export default PrivacyPolicy

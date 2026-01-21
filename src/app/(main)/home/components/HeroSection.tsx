@@ -1,7 +1,7 @@
 'use client'
 
 import primaryColorTextLogo from '@/assets/images/base_textlogo_transparent_background.png'
-import { ImageWithSkeleton } from '@/components/ImageWithSkeleton'
+import ImageWithSkeleton from '@/components/ImageWithSkeleton'
 
 const HeroSection = () => {
   return (

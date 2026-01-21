@@ -7,9 +7,9 @@ import routes from '@/app/routes'
 import primaryColorIcon from '@/assets/images/base_icon_transparent_background.png'
 import { cn } from '@/lib/utils'
 
-import { ImageWithSkeleton } from '../ImageWithSkeleton'
+import ImageWithSkeleton from './ImageWithSkeleton'
 
-export const Footer = () => {
+export default function Footer() {
   const pn = usePathname()
 
   const linkStyle = cn(

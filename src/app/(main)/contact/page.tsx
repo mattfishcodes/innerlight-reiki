@@ -1,8 +1,8 @@
 'use client'
 
-import { ContactForm } from './ContactForm'
+import ContactForm from './components/ContactForm'
 
-const Contact = () => {
+export default function Contact() {
   return (
     <main className='py-8'>
       <h3 className='text-secondary-foreground mb-8 text-center md:text-2xl'>
@@ -12,5 +12,3 @@ const Contact = () => {
     </main>
   )
 }
-
-export default Contact

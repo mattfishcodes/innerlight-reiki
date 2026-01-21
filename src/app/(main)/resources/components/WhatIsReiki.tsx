@@ -1,7 +1,7 @@
 'use client'
 
 import pagodaImg from '@/assets/images/pagoda.jpg'
-import { ImageWithSkeleton } from '@/components/ImageWithSkeleton'
+import ImageWithSkeleton from '@/components/ImageWithSkeleton'
 
 const WhatIsReiki = () => {
   return (

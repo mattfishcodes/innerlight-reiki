@@ -3,7 +3,7 @@
 import Bio from './components/Bio'
 import Qualifications from './components/Qualifications'
 
-const About = () => {
+export default function About() {
   return (
     <div className='py-3'>
       <Bio />
@@ -12,5 +12,3 @@ const About = () => {
     </div>
   )
 }
-
-export default About

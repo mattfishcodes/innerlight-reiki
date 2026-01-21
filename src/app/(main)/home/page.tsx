@@ -5,7 +5,7 @@ import HeroSection from './components/HeroSection'
 import MapEmbed from './components/MapEmbed'
 import ServicesCards from './components/ServicesCards'
 
-const Home = () => {
+export default function Home() {
   return (
     <div className='pb-3 text-center'>
       <HeroSection />
@@ -38,5 +38,3 @@ const Home = () => {
     </div>
   )
 }
-
-export default Home

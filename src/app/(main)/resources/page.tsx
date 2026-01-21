@@ -4,7 +4,7 @@ import ReikiSession from './components/ReikiSession'
 import ResourceLinks from './components/ResourceLinks'
 import WhatIsReiki from './components/WhatIsReiki'
 
-const Resources = () => {
+export default function Resources() {
   return (
     <div className='py-3'>
       <WhatIsReiki />
@@ -13,5 +13,3 @@ const Resources = () => {
     </div>
   )
 }
-
-export default Resources
