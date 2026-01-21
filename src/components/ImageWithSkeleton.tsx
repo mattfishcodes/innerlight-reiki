@@ -1,9 +1,8 @@
 'use client'
 
-import { useState } from 'react'
-
 import Image, { type StaticImageData } from 'next/image'
 
+import { useImageLoaded } from '@/hooks/use-image-loaded'
 import { cn } from '@/lib/utils'
 import { Skeleton } from '@/shadcn/ui/skeleton'
 
@@ -21,7 +20,7 @@ export default function ImageWithSkeleton({
   loading?: 'lazy' | 'eager' | undefined
   className?: string
 }) {
-  const [loaded, setLoaded] = useState(false)
+  const { loaded, markLoaded } = useImageLoaded(src)
 
   const aspectRatio = src.width / src.height
 
@@ -42,7 +41,7 @@ export default function ImageWithSkeleton({
       <Image
         src={src}
         alt={alt}
-        onLoad={() => setLoaded(true)}
+        onLoad={markLoaded}
         sizes={sizes}
         loading={loading}
         className={cn(
