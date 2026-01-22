@@ -4,13 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "rm -rf out && next build",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint .",
     "prettier": "prettier . --write",
-    "typecheck": "tsc",
+    "typecheck": "tsc --noEmit",
     "cleanup": "npm run lint && npm run typecheck && npm run prettier",
-    "optimize-images": "node scripts/optimize-images.js",
     "prepare": "husky"
   },
   "dependencies": {
@@ -36,7 +35,6 @@
     "zod": "^4.3.5"
   },
   "devDependencies": {
-    "@mattfishcodes/image-tools": "file:///Users/mattfisher/dev/modules/image-tools",
     "@types/node": "^24",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
