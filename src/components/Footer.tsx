@@ -6,7 +6,7 @@ import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { cn } from '@/lib/utils'
 
-const Footer = () => {
+export default function Footer() {
   const pn = usePathname()
 
   const linkStyle = cn(
@@ -69,5 +69,3 @@ const Footer = () => {
     </div>
   )
 }
-
-export default Footer

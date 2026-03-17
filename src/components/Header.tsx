@@ -2,8 +2,8 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { Navbar } from './Navbar'
-import { Offcanvas } from './Offcanvas'
+import Navbar from './Navbar'
+import Offcanvas from './Offcanvas'
 
 const Header = () => {
   return (

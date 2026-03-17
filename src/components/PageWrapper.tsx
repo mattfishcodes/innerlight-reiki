@@ -2,7 +2,7 @@
 
 import { ReactNode } from 'react'
 
-const PageWrapper = ({ children }: { children: ReactNode }) => {
+export default function PageWrapper({ children }: { children: ReactNode }) {
   return (
     <>
       <div className='relative min-h-[80vh] p-0'>
@@ -14,5 +14,3 @@ const PageWrapper = ({ children }: { children: ReactNode }) => {
     </>
   )
 }
-
-export default PageWrapper
