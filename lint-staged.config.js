@@ -1,8 +1,7 @@
 module.exports = {
   '*.{ts,tsx,mjs,js}': (files) => [
-    `npx eslint --fix ${files.join(' ')}`,
-    'npm run typecheck',
-    `npx prettier ${files.join(' ')} --write`,
+    `eslint --fix ${files.join(' ')}`,
+    `prettier --write ${files.join(' ')}`,
   ],
-  '*.{json,css}': (files) => [`npx prettier ${files.join(' ')} --write`],
+  '*': (files) => `prettier --write --ignore-unknown ${files.join(' ')}`,
 }
