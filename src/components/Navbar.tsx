@@ -10,13 +10,13 @@ import {
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
-export const Navbar = ({
+export default function Navbar({
   orientation = 'horizontal',
   onNavigate = () => {},
 }: {
   orientation?: 'horizontal' | 'vertical'
   onNavigate?: () => void
-}) => {
+}) {
   const pn = usePathname()
   return (
     <NavigationMenu orientation={orientation}>

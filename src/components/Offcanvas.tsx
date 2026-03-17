@@ -1,6 +1,6 @@
 'use client'
 
-import { Navbar } from '@/components/Navbar'
+import Navbar from '@/components/Navbar'
 import { Button } from '@/shadcn/ui/button'
 import {
   Sheet,
@@ -13,7 +13,7 @@ import {
 import { Menu } from 'lucide-react'
 import { useState } from 'react'
 
-export const Offcanvas = () => {
+export default function Offcanvas() {
   const [open, setOpen] = useState(false)
   return (
     <Sheet open={open} onOpenChange={setOpen}>
