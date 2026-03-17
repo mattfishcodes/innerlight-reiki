@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@mattfishcodes/cookie-consent':
+        specifier: ^1.4.0
+        version: 1.4.0
       '@radix-ui/react-dialog':
         specifier: ^1.1.15
         version: 1.1.15(@types/react-dom@19.2.3(@types/react@19.2.11))(@types/react@19.2.11)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
@@ -49,8 +52,8 @@ importers:
         version: 4.1.18
     devDependencies:
       '@mattfishcodes/image-tools':
-        specifier: file:///Users/mattfisher/dev/modules/image-tools
-        version: image-tools@file:../../modules/image-tools
+        specifier: ^1.1.0
+        version: 1.1.0
       '@types/node':
         specifier: ^24
         version: 24.10.10
@@ -506,6 +509,13 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
+
+  '@mattfishcodes/cookie-consent@1.4.0':
+    resolution: {integrity: sha512-NJkQgfzgNqpRpcePV1Uvz4OpOJri8JnERGcMZsSO0LKIC1A6IyrArkkh3ufd6mX16HLRhim+nqIDLz2UrTIRrQ==}
+
+  '@mattfishcodes/image-tools@1.1.0':
+    resolution: {integrity: sha512-3xhHyGtwiUa8FB1EMwdsdngKQQkPACQfjawt+4okF6E+B06B3/M71qiDrhyMA4On0hksyCMUYOmeu+TSusSgaQ==}
+    engines: {node: '>=24'}
 
   '@napi-rs/wasm-runtime@0.2.12':
     resolution: {integrity: sha512-ZVWUcfwY4E/yPitQJl481FjFo3K22D6qF0DuFH6Y/nbnE11GY5uguDxZMGXPQ8WQ0128MXQD7TnfHyK4oWoIJQ==}
@@ -1574,8 +1584,8 @@ packages:
     resolution: {integrity: sha512-dKx12eRCVIzqCxFGplyFKJMPvLEWgmNtUrpTiJIR5u97zEhRG8ySrtboPHZXx7daLxQVrl643cTzbab2tkQjxg==}
     engines: {node: '>= 0.4'}
 
-  fs-extra@11.3.3:
-    resolution: {integrity: sha512-VWSRii4t0AFm6ixFFmLLx1t7wS1gh+ckoa84aOeapGum0h+EZd1EhEumSB+ZdDLnEPuucsVB9oB7cxJHap6Afg==}
+  fs-extra@11.3.4:
+    resolution: {integrity: sha512-CTXd6rk/M3/ULNQj8FBqBWHYBVYybQ3VPBw0xGKFe3tuH7ytT6ACnvzpIQ3UZtB8yvUKC2cXn1a+x+5EVQLovA==}
     engines: {node: '>=14.14'}
 
   function-bind@1.1.2:
@@ -1691,10 +1701,6 @@ packages:
   ignore@7.0.5:
     resolution: {integrity: sha512-Hs59xBNfUIunMFgWAbGX5cq6893IbWg4KnrjbYwX3tx0ztorVgTDA6B2sxf8ejHJ4wz8BqGUMYlnzNBer5NvGg==}
     engines: {node: '>= 4'}
-
-  image-tools@file:../../modules/image-tools:
-    resolution: {directory: ../../modules/image-tools, type: directory}
-    engines: {node: '>=24'}
 
   import-fresh@3.3.1:
     resolution: {integrity: sha512-TR3KfrTZTYLPB6jUjfx6MF9WcWrHL9su5TObK4ZkYgBdWKPOFoSoQIdEuTuR82pmtxH2spWG9h6etwfr1pLBqQ==}
@@ -2995,6 +3001,16 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
+  '@mattfishcodes/cookie-consent@1.4.0':
+    dependencies:
+      react: 19.2.4
+      react-dom: 19.2.4(react@19.2.4)
+
+  '@mattfishcodes/image-tools@1.1.0':
+    dependencies:
+      fs-extra: 11.3.4
+      sharp: 0.33.5
+
   '@napi-rs/wasm-runtime@0.2.12':
     dependencies:
       '@emnapi/core': 1.8.1
@@ -4136,7 +4152,7 @@ snapshots:
     dependencies:
       is-callable: 1.2.7
 
-  fs-extra@11.3.3:
+  fs-extra@11.3.4:
     dependencies:
       graceful-fs: 4.2.11
       jsonfile: 6.2.0
@@ -4245,11 +4261,6 @@ snapshots:
   ignore@5.3.2: {}
 
   ignore@7.0.5: {}
-
-  image-tools@file:../../modules/image-tools:
-    dependencies:
-      fs-extra: 11.3.3
-      sharp: 0.33.5
 
   import-fresh@3.3.1:
     dependencies:
